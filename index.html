@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Offre de services - PCNE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Palette EFP */
+        :root {
+            --blue-dark: #0191b6;
+            --blue-light: #00c3de;
+            --yellow: #fc0;
+            --black: #000;
+            --white: #fff;
+        }
+
+        /* Reset minimal */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Courier New", Courier, monospace;
+            background: var(--yellow);
+            color: var(--black);
+            line-height: 1.4;
+        }
+
+        header {
+            background: var(--blue-dark);
+            color: var(--white);
+            padding: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            animation: slideIn 0.6s ease-out both;
+        }
+
+        nav#toc {
+            padding: 2rem;
+            background: var(--white);
+            border-bottom: 6px solid var(--blue-dark);
+            animation: fadeIn 0.5s ease-in-out both;
+        }
+
+        nav#toc h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            background: var(--blue-light);
+            color: var(--black);
+            padding: .5rem;
+            border-left: 8px solid var(--blue-dark);
+        }
+
+        nav#toc ol {
+            margin-left: 1.5rem;
+        }
+
+        nav#toc ol li {
+            margin-bottom: .5rem;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        main>section {
+            max-width: 66rem;
+            margin: 2rem auto;
+        }
+
+        main>section h4 {
+            margin-top: 2rem;
+            font-size: 1.25rem;
+            text-decoration: underline;
+        }
+
+
+        section>section {
+            margin-top: 1.5rem;
+            padding: 1rem;
+        }
+
+        section {
+            border: 6px solid var(--blue-dark);
+            padding: 1.5rem;
+            background: var(--white);
+            animation: fadeIn 0.5s ease-in-out both;
+            transition: transform .3s ease, border-color .3s ease, background .3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+            border-color: var(--blue-light);
+            background: var(--yellow);
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            background: var(--blue-light);
+            color: var(--black);
+            padding: .5rem;
+            border-left: 8px solid var(--blue-dark);
+        }
+
+        h3 {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            border-bottom: 3px solid var(--blue-dark);
+            padding-bottom: .25rem;
+            text-transform: uppercase;
+        }
+
+        h4 {
+            margin-top: .75rem;
+            font-size: 1.25rem;
+            text-decoration: underline;
+        }
+
+        p,
+        ul {
+            margin-top: .5rem;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            list-style-type: square;
+        }
+
+        ul li {
+            margin-bottom: .25rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Styles pour les tableaux */
+        .table-container {
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+            background: var(--white);
+        }
+
+        th {
+            background-color: var(--blue-light);
+            color: var(--black);
+            font-weight: bold;
+            text-align: left;
+            padding: 0.5rem;
+            border: 2px solid var(--blue-dark);
+        }
+
+        td {
+            border: 1px solid var(--blue-dark);
+            padding: 0.5rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(0, 195, 222, 0.1);
+        }
+
+        tr:hover {
+            background-color: var(--yellow);
+        }
+
+        h5 {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            border-left: 5px solid var(--blue-dark);
+            padding-left: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .table-resp {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            /* inertie sur iOS */
+        }
+
+        .table-resp table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+            /* garantit un scroll si plus petit que ce seuil */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Sammy Dieleman<br>
+        OFFRE DE SERVICES<br>
+        Avril 2025<br>
+        Programme de Compétences Numériques pour Entrepreneur·euse·s (PCNE)
+    </header>
+
+    <nav id="toc">
+        <h2>Table des matières</h2>
+        <ol>
+            <li><a href="#tarification">CV</a></li>
+            <li><a href="#description">Proposition Pedagogique</a>
+                <ol>
+                    <li><a href="#lot1">Premiers pas numériques pour entrepreneurs</a></li>
+                    <li><a href="#lot2">Veille stratégique efficace et ciblée</a></li>
+                    <li><a href="#lot3">L'IA au quotidien de l'entrepreneur</a></li>
+                    <li><a href="#lot4">Docs pros simplifiés avec Google Docs</a></li>
+                    <li><a href="#lot5">Gérer son activité avec Google Sheets</a></li>
+                    <li><a href="#lot6">Protéger son identité numérique</a></li>
+                </ol>
+            </li>
+        </ol>
+    </nav>
+
+    <main>
+        <section id="cv">
+            <h2>Curriculum Vitae</h2>
+
+            <h3>Fondateur & Consultant digital · HexMakina</h3>
+            <p class="job-meta"><strong>Mai 2015 - présent · Bruxelles</strong></p>
+            <p class="job-description">HexMakina accompagne TPE/PME et indépendants dans l'automatisation de leurs
+                processus
+                métiers et la mise en place de solutions logicielles sur-mesure.</p>
+            <ul>
+                <li><strong>Conception et déploiement de data pipelines:</strong> création de crawlers et parsers
+                    automatisés
+                    (web scraping, OCR, NLP) pour extraire et structurer massivement des données hétérogènes.</li>
+                <li><strong>Systèmes d'information intégrés:</strong> développement de modules de planification des
+                    ressources
+                    (ERP léger), tableaux de bord et reporting en temps réel, incluant des algorithmes de prévision et
+                    d'aide à
+                    la décision.</li>
+                <li><strong>Applications web & e-commerce:</strong> architecture et développement full-stack (PHP,
+                    JavaScript,
+                    MySQL, CSS), portails clients et plateformes de contenu, avec intégration de composants IA
+                    (chatbots,
+                    recommandations).</li>
+                <li><strong>Approche centrée utilisateur:</strong> audit des workflows existants, co-construction de
+                    solutions
+                    adaptatives, formation sur l'adoption des outils numériques et accompagnement au changement.</li>
+            </ul>
+
+            <h3>Formateur en développement web · EFP Bruxelles</h3>
+            <p class="job-meta"><strong>Sept. 2020 - présent · Bruxelles</strong></p>
+            <p class="job-description">Interventions en présentiel et online pour publics peu familiarisés au numérique,
+                autour
+                de la programmation, de la modélisation de données et de l'intégration web.</p>
+            <ul>
+                <li><strong>Ateliers hybrides:</strong> conception de modules e-learning intégrant micro-learning, quiz
+                    adaptatifs et vidéos interactives autour de PHP, JavaScript, SQL, HTML/CSS.</li>
+                <li><strong>Programmation & algorithmes:</strong> initier à la logique de programmation, aux structures
+                    de
+                    données et aux bonnes pratiques d'OOP (PHP/JS), avec exercices pratiques supervisés.</li>
+                <li><strong>Bases de données & reporting:</strong> modélisation relationnelle (SQL), requêtes avancées,
+                    génération de rapports automatisés.</li>
+            </ul>
+
+            <h3>Co-fondateur & Responsable Digital Inclusion · PCKC.be</h3>
+            <p class="job-meta"><strong>Mai 2017 - mars 2020 · Bruxelles</strong></p>
+            <p class="job-description">Mission sociale visant à réduire la fracture numérique via le dépannage low-cost
+                et la
+                formation gratuite des particuliers.</p>
+            <ul>
+                <li><strong>Diagnostic & résolution:</strong> assistance informatique sur site, résolution de pannes
+                    matérielles et logicielles, conseil en pratiques sécurisées.</li>
+                <li><strong>Soutien pédagogique:</strong> ateliers d'initiation (bureautique, web, cybersécurité),
+                    guides
+                    pas-à-pas et sessions individuelles pour autonomiser les utilisateurs.</li>
+                <li><strong>Valeur ajoutée sociétale:</strong> promotion de l'accès aux technologies, sensibilisation à
+                    l'éthique numérique et à la confidentialité des données.</li>
+            </ul>
+
+            <h3>Chef de projet / Analyste fonctionnel · Inforum gie</h3>
+            <p class="job-meta"><strong>Juil. 2010 - mars 2013 · Bruxelles</strong></p>
+            <p class="job-description">Pilotage de projets web et développement de services juridiques en ligne.</p>
+            <ul>
+                <li><strong>Analyse métier & processus:</strong> cartographie des besoins, optimisation des workflows
+                    internes
+                    et des parcours utilisateurs.</li>
+                <li><strong>R&D & intégration:</strong> prototypage de systèmes de collecte et de structuration de
+                    données
+                    légales (PHP, SQL, XML), diffusion via API.</li>
+                <li><strong>Coordination multi-parties:</strong> animation d'ateliers, suivi des prestataires,
+                    gouvernance de
+                    projet et recette fonctionnelle.</li>
+            </ul>
+
+            <h3>Ingénieur logiciel / Analyste · WICE</h3>
+            <p class="job-meta"><strong>Sept. 2007 - juin 2010 · Lovenjoël</strong></p>
+            <p class="job-description">Conception et développement de CMS et solutions d'infrastructure.</p>
+            <ul>
+                <li><strong>Développement full-stack:</strong> Ruby on Rails & PHP, création de back-offices, modules
+                    de
+                    monitoring réseau et ERP.</li>
+                <li><strong>Architecture et sécurité:</strong> élaboration de schémas d'infrastructure, mise en place
+                    de bonnes
+                    pratiques de sécurité et d'authentification.</li>
+            </ul>
+
+            <h3>Web Designer indépendant</h3>
+            <p class="job-meta"><strong>Fév. 2006 - août 2007 · Bruxelles</strong></p>
+            <p class="job-description">Réalisations de sites web vitrines et portfolios, alliant ergonomie,
+                accessibilité et
+                identité visuelle.</p>
+            <ul>
+                <li><strong>UI/UX:</strong> wireframes, maquettes et intégration responsive (HTML5/CSS3).</li>
+                <li><strong>CMS & maintenance:</strong> déploiement de sites sous WordPress et solutions sur-mesure,
+                    formation
+                    clients à la gestion de contenu.</li>
+            </ul>
+        </section>
+
+
+        <section id="description">
+            <h2>2. Description détaillée des formations proposées</h2>
+
+            <section id="lot1">
+                <h3>Lot 1 - « Premiers pas numériques pour entrepreneurs »</h3>
+                <h4>Objectifs pédagogiques</h4>
+                <ul>
+                    <li>Identifier et comprendre les composants matériels d'un ordinateur.</li>
+                    <li>Gérer et organiser fichiers et dossiers sous Windows.</li>
+                    <li>Naviguer efficacement sur Internet et exploiter les ressources.</li>
+                    <li>Utiliser une boîte mail professionnelle.</li>
+                </ul>
+                <h4>Méthodes en présentiel</h4>
+                <p>Deux parties principales, chacune avec des exercices pratiques liés à l'activité entrepreneuriale.
+                </p>
+                <strong>Partie 1 - Navigation sur ordinateur</strong>
+                <ul>
+                    <li>Présentation interactive du matériel (clavier, souris, écran, unité centrale) et connectiques
+                        (USB, HDMI, Ethernet…), démonstrations pratiques.</li>
+                    <li>Exercices souris (clic, double-clic, clic droit, glisser-déposer) et frappe clavier.</li>
+                    <li>Exploration de l'interface Windows (Bureau), raccourcis clavier (copier, coller, sauvegarder).
+                    </li>
+                    <li>Ateliers gestion de fichiers: création, nommage, déplacement, renommage, suppression.</li>
+                    <li>Organisation documentaire: arborescence de dossiers pour un projet fictif.</li>
+                </ul>
+                <strong>Partie 2 - Navigation sur Internet</strong>
+                <ul>
+                    <li>Introduction aux navigateurs (Chrome, Firefox, Edge): interface, onglets, historique.</li>
+                    <li>Techniques de recherche: opérateurs, filtres, fiabilité des sources.</li>
+                    <li>Gestion de contenus: téléchargement, renommage, classement d'images et documents.</li>
+                    <li>Messagerie pro (Gmail): création, réception, envoi, pièces jointes, mises en situation.</li>
+                    <li>Inscription sur plateformes (Moodle), enjeux de la présence en ligne.</li>
+                    <li>Évaluation: test final et feedback personnalisé.</li>
+                </ul>
+                <h4>Activités pratiques</h4>
+                <ul>
+                    <li>Organiser ses documents d'entreprise.</li>
+                    <li>Rechercher fournisseurs ou réglementations.</li>
+                    <li>Envoyer un devis par e-mail.</li>
+                    <li>Numériser et organiser des photos (artisan).</li>
+                    <li>Créer une liste de contacts clients (commerçant).</li>
+                    <li>Utiliser un agenda numérique (prestataire).</li>
+                </ul>
+            </section>
+
+            <section id="lot2">
+                <h3>Lot 2 - « Veille stratégique efficace et ciblée »</h3>
+                <h4>Objectifs pédagogiques</h4>
+                <ul>
+                    <li>Maîtriser l'utilisation avancée des moteurs de recherche.</li>
+                    <li>Développer une veille pour opportunités et risques.</li>
+                    <li>Organiser et exploiter les informations collectées.</li>
+                </ul>
+                <strong>Phase 1 - e-learning pré-formation</strong>
+                <ul>
+                    <li>Test de positionnement initial (questionnaire interactif).</li>
+                    <li>Introduction: vidéo, infographie des 6 étapes, diaporama, fiches comparatives de navigateurs,
+                        lecture recommandée.</li>
+                    <li>Outils et techniques: tutoriels (booléens, alertes Google, Feedly, StartMe), podcast (15 min),
+                        exercice tableau de bord.</li>
+                </ul>
+                <strong>Phase 2 - Session présentielle</strong>
+                <ul>
+                    <li>Analyse de cas concrets.</li>
+                    <li>Atelier de stratégie de veille personnalisée.</li>
+                    <li>Plan d'action pour intégrer la veille.</li>
+                </ul>
+                <strong>Phase 3 - e-learning post-formation</strong>
+                <ul>
+                    <li>Approfondissement: Google Alerts, guide outils de curation.</li>
+                    <li>Analyse et diffusion: diaporama interactif, exercice bulletin de veille.</li>
+                    <li>Évaluation: quiz final (15 questions), fiche « Ma veille, en pratique ». </li>
+                </ul>
+                <h4>Tableau détaillé des activités</h4>
+                <div class="table-container">
+                    <h5>Phase 1: Contenu pré-formation (e-learning)</h5>
+                    <div class="table-resp">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Activité</th>
+                                    <th>Durée estimée</th>
+                                    <th>Description</th>
+                                    <th>Supports</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Test de positionnement</td>
+                                    <td>15 min</td>
+                                    <td>Questionnaire interactif pour identifier le niveau et les attentes des
+                                        participants
+                                    </td>
+                                    <td>Quiz en ligne</td>
+                                </tr>
+                                <tr>
+                                    <td>Introduction à la veille stratégique</td>
+                                    <td>45 min</td>
+                                    <td>Découverte des concepts clés, types de veille et leur importance pour les
+                                        entrepreneurs</td>
+                                    <td>Vidéo explicative, infographie interactive des 6 étapes, diaporama, fiches
+                                        comparatives des
+                                        navigateurs, article recommandé</td>
+                                </tr>
+                                <tr>
+                                    <td>Outils et techniques de collecte</td>
+                                    <td>60 min</td>
+                                    <td>Apprentissage des méthodes avancées de recherche et agrégation d'information
+                                    </td>
+                                    <td>Tutoriels vidéo (opérateurs booléens, alertes Google, Feedly, StartMe), podcast
+                                        (15
+                                        min)</td>
+                                </tr>
+                                <tr>
+                                    <td>Exercice pratique</td>
+                                    <td>30 min</td>
+                                    <td>Création d'un tableau de bord personnalisé de veille</td>
+                                    <td>Template de tableau de bord, guide pas à pas</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h5>Phase 2: Session présentielle</h5>
+                    <div class="table-resp">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Activité</th>
+                                    <th>Durée estimée</th>
+                                    <th>Description</th>
+                                    <th>Supports</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Analyse de cas concrets</td>
+                                    <td>60 min</td>
+                                    <td>Étude de cas réels de veille stratégique réussie</td>
+                                    <td>Études de cas imprimées, présentation, documents d'analyse</td>
+                                </tr>
+                                <tr>
+                                    <td>Atelier de stratégie personnalisée</td>
+                                    <td>90 min</td>
+                                    <td>Création d'une stratégie de veille adaptée à son secteur d'activité</td>
+                                    <td>Templates, fiches méthodes, cartes mentales</td>
+                                </tr>
+                                <tr>
+                                    <td>Plan d'action d'intégration</td>
+                                    <td>60 min</td>
+                                    <td>Mise en place d'un système concret pour intégrer la veille dans l'activité
+                                        quotidienne</td>
+                                    <td>Modèle de plan d'action, calendrier type, checklist</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h5>Phase 3: Contenu post-formation (e-learning)</h5>
+                    <div class="table-resp">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Activité</th>
+                                    <th>Durée estimée</th>
+                                    <th>Description</th>
+                                    <th>Supports</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Approfondissement des outils</td>
+                                    <td>45 min</td>
+                                    <td>Maîtrise des outils avancés pour automatiser la veille</td>
+                                    <td>Tutoriels vidéo Google Alerts, guide PDF sur les outils de curation</td>
+                                </tr>
+                                <tr>
+                                    <td>Analyse et diffusion</td>
+                                    <td>60 min</td>
+                                    <td>Méthodes de synthèse et partage de l'information recueillie</td>
+                                    <td>Diaporama interactif, modèles de bulletins de veille</td>
+                                </tr>
+                                <tr>
+                                    <td>Exercice guidé</td>
+                                    <td>45 min</td>
+                                    <td>Création d'un bulletin de veille à partir d'un corpus d'informations</td>
+                                    <td>Corpus d'informations, template à compléter</td>
+                                </tr>
+                                <tr>
+                                    <td>Quiz final</td>
+                                    <td>15 min</td>
+                                    <td>Évaluation des compétences acquises</td>
+                                    <td>Quiz en ligne (15 questions)</td>
+                                </tr>
+                                <tr>
+                                    <td>Plan d'action personnalisé</td>
+                                    <td>30 min</td>
+                                    <td>Élaboration d'une stratégie durable de veille</td>
+                                    <td>Fiche "Ma veille, en pratique"</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </section>
+            <section id="lot3">
+                <h3>Lot 3 - « L'IA au quotidien de l'entrepreneur »</h3>
+                <h4>Objectifs pédagogiques</h4>
+                <ul>
+                    <li>Comprendre l'IA et l'IA générative.</li>
+                    <li>Identifier opportunités et limites de l'IA.</li>
+                    <li>Apprendre le prompt engineering.</li>
+                    <li>Intégrer l'IA dans ses processus.</li>
+                    <li>Adopter une approche éthique.</li>
+                </ul>
+                <strong>Phase 1 - Pré-formation</strong>
+                <ul>
+                    <li>Test de positionnement initial.</li>
+                    <li>Comprendre l'IA: vidéo animée, infographie, podcast (10 min).</li>
+                    <li>Introduction au prompt: diaporama, bibliothèque de prompts, exercice auto-corrigé.</li>
+                    <li>Enjeux et responsabilités: vidéo, fiche de lecture, quiz IA & éthique, ressources externes.
+                    </li>
+                </ul>
+                <strong>Phase 2 - Session présentielle</strong>
+                <ul>
+                    <li>Introduction et débrief.</li>
+                    <li>Atelier prompts personnalisés (prospection, client, administratif).</li>
+                    <li>Génération de contenu visuel (flyer, logo, visuel Instagram).</li>
+                    <li>Optimisation administrative: correction, reformulation, modèles adaptables.</li>
+                </ul>
+                <strong>Phase 3 - Post-formation</strong>
+                <ul>
+                    <li>Tutoriels avancés ChatGPT et autres outils IA.</li>
+                    <li>Bibliothèque de prompts avancés.</li>
+                    <li>Exercice plan d'action IA et étude de cas.</li>
+                    <li>Quiz final (15 questions).</li>
+                </ul>
+                <h4>Tableau détaillé des activités</h4>
+                <div class="table-container">
+                    <h5>Phase 1: Contenu pré-formation (e-learning)</h5>
+                    <div class="table-resp">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Activité</th>
+                                    <th>Durée estimée</th>
+                                    <th>Description</th>
+                                    <th>Supports</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Test de positionnement initial</td>
+                                    <td>15 min</td>
+                                    <td>Évaluation des connaissances et identification des besoins</td>
+                                    <td>Questionnaire interactif en ligne</td>
+                                </tr>
+                                <tr>
+                                    <td>Comprendre l'intelligence artificielle</td>
+                                    <td>40 min</td>
+                                    <td>Introduction aux types d'IA et applications pratiques pour entrepreneurs</td>
+                                    <td>Vidéo animée, infographie interactive de l'évolution de l'IA, podcast (10 min)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Introduction au prompt engineering</td>
+                                    <td>45 min</td>
+                                    <td>Apprentissage des techniques de formulation de requêtes efficaces</td>
+                                    <td>Diaporama explicatif, bibliothèque de prompts, exercices auto-corrigés</td>
+                                </tr>
+                                <tr>
+                                    <td>Enjeux et responsabilités</td>
+                                    <td>30 min</td>
+                                    <td>Sensibilisation aux aspects éthiques, environnementaux et juridiques</td>
+                                    <td>Vidéo, fiche de lecture, quiz IA & éthique, ressources Creative Commons</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h5>Phase 2: Session présentielle</h5>
+                    <div class="table-resp">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Activité</th>
+                                    <th>Durée estimée</th>
+                                    <th>Description</th>
+                                    <th>Supports</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Introduction et débrief</td>
+                                    <td>30 min</td>
+                                    <td>Discussion des acquis de la phase de pré-formation et partage d'expériences</td>
+                                    <td>Support de présentation, questions guidées</td>
+                                </tr>
+                                <tr>
+                                    <td>Atelier de prompts personnalisés</td>
+                                    <td>90 min</td>
+                                    <td>Rédaction et test de prompts adaptés à son activité entrepreneuriale</td>
+                                    <td>Fiches de travail, modèles de prompts pour prospection/client/administratif</td>
+                                </tr>
+                                <tr>
+                                    <td>Génération de contenu visuel</td>
+                                    <td>60 min</td>
+                                    <td>Création d'éléments visuels pour sa communication d'entreprise</td>
+                                    <td>Accès à des outils d'IA générative d'images, guides techniques pour
+                                        flyers/logos/visuels
+                                        Instagram</td>
+                                </tr>
+                                <tr>
+                                    <td>Optimisation administrative</td>
+                                    <td>60 min</td>
+                                    <td>Utilisation de l'IA pour automatiser et améliorer les tâches administratives
+                                    </td>
+                                    <td>Exercices guidés, modèles adaptables pour courriers/contrats/emails</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h5>Phase 3: Contenu post-formation (e-learning)</h5>
+                    <div class="table-resp">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Activité</th>
+                                    <th>Durée estimée</th>
+                                    <th>Description</th>
+                                    <th>Supports</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tutoriels avancés</td>
+                                    <td>60 min</td>
+                                    <td>Approfondissement des fonctionnalités avancées de ChatGPT et autres outils d'IA
+                                    </td>
+                                    <td>Vidéos tutoriels, guides PDF, bibliothèque de prompts avancés téléchargeable
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Projet d'intégration</td>
+                                    <td>90 min</td>
+                                    <td>Élaboration d'un plan d'action personnalisé pour intégrer l'IA dans son activité
+                                    </td>
+                                    <td>Template de plan d'action, étude de cas de réussite, documentation</td>
+                                </tr>
+                                <tr>
+                                    <td>Quiz final</td>
+                                    <td>15 min</td>
+                                    <td>Évaluation des compétences acquises</td>
+                                    <td>Quiz en ligne (15 questions)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section id="lot4">
+                <h3>Lot 4 - « Documents pros simplifiés avec Google Docs »</h3>
+                <h4>Objectifs pédagogiques</h4>
+                <ul>
+                    <li>Créer des documents pros conformes.</li>
+                    <li>Maîtriser Google Docs (mise en forme, partage).</li>
+                    <li>Adapter à Word.</li>
+                </ul>
+                <strong>Phase 1 - Pré-formation</strong>
+                <ul>
+                    <li>Test de positionnement initial.</li>
+                    <li>Découverte suite Google: Docs, Sheets, Slides, Drive, Gmail.</li>
+                    <li>Google Docs: structure, interface, mini-quiz.</li>
+                    <li>Mise en forme: styles, polices, hiérarchie.</li>
+                    <li>Insertion: tableaux, images, graphiques, formats PDF/Word, partage.</li>
+                </ul>
+                <strong>Phase 2 - Session présentielle</strong>
+                <ul>
+                    <li>Q&R et ateliers: facture (logo, TVA, mentions légales), appel d'offres (styles, hiérarchie).
+                    </li>
+                    <li>Pratique libre avec feedback.</li>
+                    <li>Évaluation finale (mini-document).</li>
+                </ul>
+                <strong>Phase 3 - Post-formation</strong>
+                <ul>
+                    <li>Tutoriel modèles Google Docs.</li>
+                    <li>Exercice téléchargeable + correction vidéo.</li>
+                    <li>Fiche « rappels clés » et plan d'action « Mes 3 documents ».</li>
+                </ul>
+                <h4>Tableau détaillé des activités</h4>
+                <div class="table-container">
+                    <h5>Phase 1: Contenu pré-formation (e-learning)</h5>
+                    <div class="table-resp">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Activité</th>
+                                    <th>Durée estimée</th>
+                                    <th>Description</th>
+                                    <th>Supports</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Test de positionnement initial</td>
+                                    <td>15 min</td>
+                                    <td>Évaluation des compétences et identification des besoins spécifiques</td>
+                                    <td>Questionnaire interactif en ligne</td>
+                                </tr>
+                                <tr>
+                                    <td>Découverte de la suite Google</td>
+                                    <td>30 min</td>
+                                    <td>Exploration des outils Google et leurs usages professionnels</td>
+                                    <td>Tutoriel vidéo, infographie "Quelle application pour quel usage?", fiche mémo
+                                        des
+                                        raccourcis
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Google Docs pour documents professionnels</td>
+                                    <td>45 min</td>
+                                    <td>Présentation des structures et formats adaptés aux documents d'entreprise</td>
+                                    <td>Diaporama animé, vidéo démonstration de l'interface, mini-quiz</td>
+                                </tr>
+                                <tr>
+                                    <td>Mise en forme professionnelle</td>
+                                    <td>40 min</td>
+                                    <td>Apprentissage des techniques de formatage et styles cohérents</td>
+                                    <td>Tutoriel interactif, exercice guidé de reformatage</td>
+                                </tr>
+                                <tr>
+                                    <td>Insertion d'éléments et gestion</td>
+                                    <td>35 min</td>
+                                    <td>Maîtrise des fonctionnalités avancées et export de documents</td>
+                                    <td>Vidéos tutoriels, fiche pratique (formats, protection, partage)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h5>Phase 2: Session présentielle</h5>
+                    <div class="table-resp">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Activité</th>
+                                    <th>Durée estimée</th>
+                                    <th>Description</th>
+                                    <th>Supports</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Introduction et révision</td>
+                                    <td>30 min</td>
+                                    <td>Clarification des concepts et résolution des difficultés rencontrées</td>
+                                    <td>Support de présentation, session questions/réponses</td>
+                                </tr>
+                                <tr>
+                                    <td>Atelier facture client</td>
+                                    <td>60 min</td>
+                                    <td>Création d'un modèle de facture professionnel complet</td>
+                                    <td>Template guidé, instructions pour logo/TVA/mentions légales</td>
+                                </tr>
+                                <tr>
+                                    <td>Atelier appel d'offres</td>
+                                    <td>60 min</td>
+                                    <td>Rédaction structurée d'une réponse avec mise en page optimisée</td>
+                                    <td>Modèles de documents, guide de styles et hiérarchie visuelle</td>
+                                </tr>
+                                <tr>
+                                    <td>Pratique libre avec feedback</td>
+                                    <td>45 min</td>
+                                    <td>Travail personnalisé sur un type de document adapté à son activité</td>
+                                    <td>Choix de modèles, accompagnement individuel</td>
+                                </tr>
+                                <tr>
+                                    <td>Évaluation finale</td>
+                                    <td>30 min</td>
+                                    <td>Production autonome d'un mini-document professionnel</td>
+                                    <td>Consignes d'évaluation, grille de critères, discussion collective</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h5>Phase 3: Contenu post-formation (e-learning)</h5>
+                    <div class="table-resp">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Activité</th>
+                                    <th>Durée estimée</th>
+                                    <th>Description</th>
+                                    <th>Supports</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Utilisation des modèles</td>
+                                    <td>30 min</td>
+                                    <td>Approfondissement de l'usage des modèles prédéfinis et personnalisés</td>
+                                    <td>Tutoriel vidéo, galerie de modèles Google Docs</td>
+                                </tr>
+                                <tr>
+                                    <td>Exercice pratique</td>
+                                    <td>45 min</td>
+                                    <td>Application des compétences sur un document à compléter</td>
+                                    <td>Fichier d'exercice téléchargeable, vidéo de correction</td>
+                                </tr>
+                                <tr>
+                                    <td>Plan d'action personnel</td>
+                                    <td>30 min</td>
+                                    <td>Définition d'une stratégie d'utilisation régulière de Google Docs</td>
+                                    <td>Fiche "rappels clés", plan "Mes 3 documents professionnels"</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section id="lot5">
+                <h3>Lot 5 - « Gérer son activité avec Google Sheets »</h3>
+                <h4>Objectifs pédagogiques</h4>
+                <ul>
+                    <li>Automatiser la gestion via tableur.</li>
+                    <li>Concevoir tableaux de suivi, budgets, plannings.</li>
+                    <li>Devenir autonome sur formules et partage.</li>
+                </ul>
+                <strong>Phase 1 - Pré-formation</strong>
+                <ul>
+                    <li>Test de positionnement initial.</li>
+                    <li>Découverte Google Sheets: interface, raccourcis, bonnes pratiques.</li>
+                    <li>Fonctions de base: somme, moyenne, SI, tri, filtres, quiz.</li>
+                    <li>Modèles prêts à l'emploi: budget, facture, planning.</li>
+                </ul>
+                <strong>Phase 2 - Session présentielle</strong>
+                <ul>
+                    <li>Quiz interactif.</li>
+                    <li>Atelier 1: suivi d'activité réel (clients, prestations, facturation).</li>
+                    <li>Atelier 2: prévisionnel/tableau de bord (graphiques, mise en forme conditionnelle).</li>
+                    <li>Astuces: figer, verrouiller, exporter, partager.</li>
+                    <li>Évaluation finale (mini-défi, feedback).</li>
+                </ul>
+                <strong>Phase 3 - Post-formation</strong>
+                <ul>
+                    <li>Vidéos avancées: fonctions imbriquées, protection, formules conditionnelles.</li>
+                    <li>Exercice à domicile + correction vidéo.</li>
+                    <li>Fiche mémo « Mes automatismes Sheets » et plan d'action.</li>
+                </ul>
+                <h4>Tableau détaillé des activités</h4>
+                <div class="table-container">
+                    <h5>Phase 1: Contenu pré-formation (e-learning)</h5>
+                    <div class="table-resp">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Activité</th>
+                                    <th>Durée estimée</th>
+                                    <th>Description</th>
+                                    <th>Supports</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Test de positionnement initial</td>
+                                    <td>15 min</td>
+                                    <td>Évaluation des compétences actuelles et des besoins spécifiques</td>
+                                    <td>Questionnaire interactif en ligne</td>
+                                </tr>
+                                <tr>
+                                    <td>Découverte de Google Sheets</td>
+                                    <td>30 min</td>
+                                    <td>Introduction à l'interface et fonctionnalités de base</td>
+                                    <td>Vidéo tutorielle, affiche mémo "Google Sheets pour quoi faire?", fiche pratique
+                                        des
+                                        raccourcis
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Fonctions de base</td>
+                                    <td>45 min</td>
+                                    <td>Maîtrise des formules essentielles et techniques de tri/filtrage</td>
+                                    <td>Tutoriels vidéo, quiz interactif "repérer l'erreur", mini-défi de reproduction
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Modèles prêts à l'emploi</td>
+                                    <td>30 min</td>
+                                    <td>Utilisation et personnalisation de modèles existants</td>
+                                    <td>Modèles téléchargeables (budget, facture, planning), exercice guidé d'adaptation
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h5>Phase 2: Session présentielle</h5>
+                    <div class="table-resp">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Activité</th>
+                                    <th>Durée estimée</th>
+                                    <th>Description</th>
+                                    <th>Supports</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Quiz interactif</td>
+                                    <td>20 min</td>
+                                    <td>Révision collective des notions abordées en e-learning</td>
+                                    <td>Quiz interactif, support de présentation</td>
+                                </tr>
+                                <tr>
+                                    <td>Atelier 1: Tableau de suivi d'activité</td>
+                                    <td>75 min</td>
+                                    <td>Création d'un outil de suivi clients/prestations/facturation</td>
+                                    <td>Template guidé, fiche technique des formules nécessaires</td>
+                                </tr>
+                                <tr>
+                                    <td>Atelier 2: Prévisionnel/tableau de bord</td>
+                                    <td>75 min</td>
+                                    <td>Conception d'un tableau de bord avec graphiques et mises en forme
+                                        conditionnelles
+                                    </td>
+                                    <td>Modèle de base à enrichir, guide des types de graphiques</td>
+                                </tr>
+                                <tr>
+                                    <td>Astuces d'efficacité et sécurité</td>
+                                    <td>30 min</td>
+                                    <td>Techniques de verrouillage, partage et export sécurisé</td>
+                                    <td>Démonstrations pratiques, fiches récapitulatives</td>
+                                </tr>
+                                <tr>
+                                    <td>Évaluation finale</td>
+                                    <td>45 min</td>
+                                    <td>Mise en pratique autonome et correction d'un fichier mal conçu</td>
+                                    <td>Mini-défi individuel (20 min), session feedback collectif</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h5>Phase 3: Contenu post-formation (e-learning)</h5>
+                    <div class="table-resp">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Activité</th>
+                                    <th>Durée estimée</th>
+                                    <th>Description</th>
+                                    <th>Supports</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Fonctions avancées</td>
+                                    <td>60 min</td>
+                                    <td>Approfondissement des fonctionnalités complexes</td>
+                                    <td>Vidéos tutoriels (fonctions imbriquées, protection, formules conditionnelles),
+                                        modèle avancé de
+                                        gestion de stock</td>
+                                </tr>
+                                <tr>
+                                    <td>Exercice pratique à domicile</td>
+                                    <td>45 min</td>
+                                    <td>Application des compétences sur un cas pratique complet</td>
+                                    <td>Fichier tableau de devis à compléter, vidéo de correction</td>
+                                </tr>
+                                <tr>
+                                    <td>Plan d'action d'autonomie</td>
+                                    <td>30 min</td>
+                                    <td>Définition d'une stratégie d'utilisation régulière de Google Sheets</td>
+                                    <td>Fiche mémo "Mes automatismes Google Sheets", plan "3 modèles à construire"</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section id="lot6">
+                <h3>Lot 6 - « Protéger son identité numérique et sécuriser son activité »</h3>
+                <h4>Objectifs pédagogiques</h4>
+                <ul>
+                    <li>Comprendre les risques numériques.</li>
+                    <li>Appliquer des pratiques de protection.</li>
+                    <li>Adopter une posture de prévention quotidienne.</li>
+                </ul>
+                <strong>Phase 1 - Pré-formation</strong>
+                <ul>
+                    <li>Test de positionnement initial.</li>
+                    <li>Risques: phishing, usurpation, escroqueries (vidéos, diaporama, étude de cas).</li>
+                    <li>Bonnes pratiques: mots de passe, sauvegardes, cloud, réseaux publics.</li>
+                    <li>Obligations légales: RGPD, consentement, mini-quiz.</li>
+                </ul>
+                <strong>Phase 2 - Session présentielle</strong>
+                <ul>
+                    <li>Quiz d'ouverture et jeu de rôle « mail piège ».</li>
+                    <li>Atelier: mot de passe sécurisé, gestionnaire (Bitwarden…), 2FA, Drive.</li>
+                    <li>Sensibilisation partenaires: charte de bonnes pratiques.</li>
+                    <li>Évaluation finale (cas pratique).</li>
+                </ul>
+                <strong>Phase 3 - Post-formation</strong>
+                <ul>
+                    <li>Vidéo et podcast sur détection de fraudes.</li>
+                    <li>Exercice simulation d'attaque + checklist mensuelle.</li>
+                    <li>Fiche « sécurité numérique mensuelle » pour routine.</li>
+                </ul>
+
+                <h4>Tableau détaillé des activités</h4>
+                <div class="table-container">
+                    <h5>Phase 1: Contenu pré-formation (e-learning)</h5>
+                    <div class="table-resp">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Activité</th>
+                                    <th>Durée estimée</th>
+                                    <th>Description</th>
+                                    <th>Supports</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Test de positionnement initial</td>
+                                    <td>15 min</td>
+                                    <td>Évaluation des connaissances et risques numériques actuels</td>
+                                    <td>Questionnaire interactif en ligne</td>
+                                </tr>
+                                <tr>
+                                    <td>Principaux risques</td>
+                                    <td>45 min</td>
+                                    <td>Identification des menaces cyber courantes pour entrepreneurs</td>
+                                    <td>Vidéos explicatives (phishing, usurpation, escroqueries), diaporama "5 erreurs
+                                        fréquentes",
+                                        étude de cas "Mon site a été piraté"</td>
+                                </tr>
+                                <tr>
+                                    <td>Bonnes pratiques quotidiennes</td>
+                                    <td>30 min</td>
+                                    <td>Apprentissage des mesures de sécurité de base</td>
+                                    <td>Affiche mémo (mots de passe, sauvegardes, cloud, réseaux publics), exercice de
+                                        détection de
+                                        menaces</td>
+                                </tr>
+                                <tr>
+                                    <td>Obligations légales</td>
+                                    <td>30 min</td>
+                                    <td>Compréhension du cadre réglementaire de protection des données</td>
+                                    <td>Fiche lecture RGPD, mini-quiz vrai/faux sur la loi</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h5>Phase 2: Session présentielle</h5>
+                    <div class="table-resp">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Activité</th>
+                                    <th>Durée estimée</th>
+                                    <th>Description</th>
+                                    <th>Supports</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Quiz et jeu de rôle</td>
+                                    <td>30 min</td>
+                                    <td>Révision interactive et mise en situation sur la détection de menaces</td>
+                                    <td>Quiz interactif, simulation "mail piège", guide de discussion</td>
+                                </tr>
+                                <tr>
+                                    <td>Atelier pratique de sécurisation</td>
+                                    <td>90 min</td>
+                                    <td>Mise en place d'outils et méthodes de protection</td>
+                                    <td>Guide création mot de passe sécurisé, démo gestionnaire (Bitwarden),
+                                        configuration
+                                        2FA,
+                                        procédure sécurisation Drive</td>
+                                </tr>
+                                <tr>
+                                    <td>Sensibilisation partenaires</td>
+                                    <td>45 min</td>
+                                    <td>Élaboration d'une stratégie de communication sur la sécurité</td>
+                                    <td>Template de charte de bonnes pratiques, exemples de communication</td>
+                                </tr>
+                                <tr>
+                                    <td>Évaluation finale</td>
+                                    <td>30 min</td>
+                                    <td>Application des connaissances à un cas concret</td>
+                                    <td>Incident fictif à analyser, modèle de réponse écrite</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h5>Phase 3: Contenu post-formation (e-learning)</h5>
+                    <div class="table-resp">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Activité</th>
+                                    <th>Durée estimée</th>
+                                    <th>Description</th>
+                                    <th>Supports</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Approfondissement</td>
+                                    <td>30 min</td>
+                                    <td>Renforcement des compétences de détection des menaces</td>
+                                    <td>Vidéo "Reconnaître un site frauduleux", podcast témoignage (5 min)</td>
+                                </tr>
+                                <tr>
+                                    <td>Simulation d'attaque</td>
+                                    <td>45 min</td>
+                                    <td>Mise en pratique des réflexes de sécurité</td>
+                                    <td>Exercice de simulation, checklist d'action à compléter</td>
+                                </tr>
+                                <tr>
+                                    <td>Routine de sécurité</td>
+                                    <td>15 min</td>
+                                    <td>Mise en place d'une pratique régulière de vérification</td>
+                                    <td>Fiche "sécurité numérique mensuelle" imprimable</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
