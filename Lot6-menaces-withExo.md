@@ -1,6 +1,6 @@
-# 🧠 Menaces virtuelles
+# Menaces virtuelles
 
-## 🎭 Ingénierie sociale & usurpation
+## Ingénierie sociale & usurpation
 
 ### 1. **Phishing**
 
@@ -56,7 +56,7 @@
 
 ---
 
-## 🐛 Logiciels malveillants & infections
+## Logiciels malveillants & infections
 
 ### 1. **Malwares**
 
@@ -120,7 +120,7 @@
 
 ---
 
-## 🔓 Failles techniques & piratage réseau
+## Failles techniques & piratage réseau
 
 ### 1. **Fuite via applications tierces**
 
@@ -148,9 +148,9 @@
 
 ---
 
-## 🏢 Menaces physiques
+## Menaces physiques
 
-### 👀 Accès non autorisé & espionnage
+### Accès non autorisé & espionnage
 
 #### 1. **Poste non verrouillé**
 
@@ -202,7 +202,7 @@
 
 ---
 
-## 💾 Supports et périphériques
+## Supports et périphériques
 
 ### 1. **Objets connectés non sécurisés**
 
@@ -254,7 +254,7 @@
 
 ---
 
-## ⚠️ Pannes & imprévus
+## Pannes & imprévus
 
 ### 1. **Vol de matériel**
 
