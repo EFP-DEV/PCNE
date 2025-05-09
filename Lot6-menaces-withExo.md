@@ -322,6 +322,44 @@
 
 
 
+---
+
+# Resources
+
+
+
+## 🔹 Phase 1 – Pré-formation (E-learning)
+
+| Activité                                          | Sites utiles                                                                                                                                                                                                                                                                                                                                                                        |
+| ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Test de positionnement**                        | [https://www.cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr) – auto-évaluation sécurité / quiz<br>[https://haveibeenpwned.com](https://haveibeenpwned.com) – test d’exposition de comptes                                                                                                                                                                         |
+| **Risques : phishing, usurpation, escroqueries**  | [https://www.phishing-initiative.fr](https://www.phishing-initiative.fr) – signalement et exemples<br>[https://www.secnumacademie.gouv.fr](https://www.secnumacademie.gouv.fr) – MOOC ANSSI : modules introductifs gratuits<br>[https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques) |
+| **Bonnes pratiques (mots de passe, cloud, etc.)** | [https://bitwarden.com](https://bitwarden.com) – gestionnaire open-source<br>[https://security.org/how-secure-is-my-password](https://security.org/how-secure-is-my-password) – test de robustesse<br>[https://ssd.eff.org](https://ssd.eff.org) – Electronic Frontier Foundation (EFF) : guides pratiques                                                                          |
+| **Obligations légales : RGPD**                    | [https://www.cnil.fr](https://www.cnil.fr) – ressources pédagogiques<br>[https://gdpr.eu](https://gdpr.eu) – version synthétique du RGPD en anglais<br>[https://www.educnum.fr](https://www.educnum.fr) – kits pour éducateurs                                                                                                                                                      |
+
+---
+
+## 🔹 Phase 2 – Présentiel
+
+| Activité                                               | Sites utiles                                                                                                                                                                                                                                                    |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Quiz & jeu de rôle (mail piège)**                    | [https://www.phishingbox.com](https://www.phishingbox.com) (en démo)<br>[https://tryhackme.com/room/phishing](https://tryhackme.com/room/phishing) – salle de simulation pour découvrir les pièges                                                              |
+| **Atelier pratique : mot de passe, gestionnaire, 2FA** | [https://bitwarden.com](https://bitwarden.com)<br>[https://2fa.directory](https://2fa.directory) – liste des sites compatibles 2FA<br>[https://authy.com](https://authy.com) – alternative à Google Authenticator                                               |
+| **Charte de bonnes pratiques**                         | [https://www.cybermalveillance.gouv.fr/charte-informatique](https://www.cybermalveillance.gouv.fr/charte-informatique)<br>[https://www.ssi.gouv.fr/uploads/2016/07/NP\_Charte\_admin\_SSI.pdf](https://www.ssi.gouv.fr/uploads/2016/07/NP_Charte_admin_SSI.pdf) |
+| **Évaluation finale (incident fictif)**                | [https://www.root-me.org](https://www.root-me.org) – scénarios pour débutants<br>[https://www.hackthebox.com](https://www.hackthebox.com) – pour profils plus techniques                                                                                        |
+
+---
+
+## 🔹 Phase 3 – Post-formation
+
+| Activité                          | Sites utiles                                                                                                                                                                                                                                                                                    |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Vidéo/podcast sur les fraudes** | [https://www.futura-sciences.com/tech/podcasts/](https://www.futura-sciences.com/tech/podcasts/) – podcasts vulgarisation<br>[https://www.scamwatch.gov.au/](https://www.scamwatch.gov.au/) – études de cas internationales                                                                     |
+| **Simulation d’attaque**          | [https://cyberrange.org](https://cyberrange.org) – environnement de simulation (pro niveau)<br>[https://www.ouestnumerique.fr/cybersurvie](https://www.ouestnumerique.fr/cybersurvie) – kit simplifié pour TPE/PME                                                                              |
+| **Routine mensuelle**             | [https://www.cybermalveillance.gouv.fr/checklists](https://www.cybermalveillance.gouv.fr/checklists)<br>[https://www.cisco.com/c/fr\_fr/products/security/cybersecurity-month.html](https://www.cisco.com/c/fr_fr/products/security/cybersecurity-month.html) – routines thématiques mensuelles |
+
+--- Autres
+
 [Sur la piste du hacker](https://cyber.forge.apps.education.fr/cyber-enquete/)
 [Escape Game AC Normandie](https://view.genially.com/66474a537609460014772eec)
 [Cyber Enquete](https://scape.enepe.fr/cyber-enquete.html)
