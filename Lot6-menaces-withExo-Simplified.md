@@ -13,8 +13,13 @@ Un message qui imite un email ou SMS officiel pour vous piéger (banque, impôts
 - En cas de doute, contacter l'organisme vous-même.
 
 **Exercices**
-- Quizz : vrai ou faux email
-- Comparer un email piégé avec un email légitime
+* **Quizz “Phishing ou pas ?”**
+  → Montrez des captures d'écran de mails (vrais/faux). Les apprenants doivent décider si l'email est sûr ou piégé.
+  *Outil possible : diaporama ou Google Forms avec réponses conditionnelles.*
+
+* **Atelier : Analyser un email**
+  → Proposez un faux email imprimé ou projeté. Les participants doivent identifier les signaux d'alerte (adresse, liens, ton…).
+  *Variante : en groupe avec une grille de détection simple.*
 
 ---
 
@@ -29,8 +34,17 @@ Quelqu'un vole ou devine votre mot de passe pour se connecter à votre place.
 - Activer la double sécurité (2FA) si possible
 
 **Exercices**
-- Créer un mot de passe fort
-- Tester un mot de passe : [https://www.security.org/how-secure-is-my-password](https://www.security.org/how-secure-is-my-password)
+* **Jeu : “Quel est le mot de passe le plus sûr ?”**
+  → Présentez 5 mots de passe (ex. 123456, P\@ssw0rd, TranquilLapin!84). Les apprenants doivent les classer du plus faible au plus fort.
+  *Support papier ou tableau blanc.*
+
+* **Exercice pratique : Créer un mot de passe fort**
+  → Chacun écrit une phrase de passe personnelle (ex. "Mes enfants adorent les crêpes le dimanche !") et la transforme en mot de passe sécurisé.
+
+* **Utilisation d'un testeur en ligne**
+  → [https://www.security.org/how-secure-is-my-password/](https://www.security.org/how-secure-is-my-password/)
+  *Les participants testent anonymement leur mot de passe sur le site.*
+ester un mot de passe : [https://www.security.org/how-secure-is-my-password](https://www.security.org/how-secure-is-my-password)
 
 ---
 
@@ -59,8 +73,12 @@ Envoyer un document sensible sans mot de passe ou lien protégé.
 - Éviter les pièces jointes non protégées
 
 **Exercices**
-- Créer un lien sécurisé
-- Identifier les erreurs de partage
+* **Cas pratique : Partage sécurisé ou non ?**
+  → Afficher 3 cas : un email avec PJ, un lien sans mot de passe, un lien avec expiration. L'apprenant identifie le plus sécurisé.
+
+* **Atelier pratique**
+  → Sur OneDrive ou Google Drive : chaque apprenant crée un lien protégé par mot de passe ou expiration.
+
 
 ---
 
@@ -109,9 +127,13 @@ Laisser son poste ouvert permet à d'autres d'y accéder.
 - Activer le verrouillage automatique
 
 **Exercices**
-- Configurer le verrouillage automatique
-- Jeu de rôle : intrusion simulée
+* **Jeu : “Capture de poste”**
+  → Pendant une pause, un formateur repère un poste non verrouillé. Il y laisse un message gentil ou un post-it "Attention, écran non verrouillé".
+  *Permet de sensibiliser sans sanction.*
 
+* **Challenge express**
+  → En groupe : "qui active le verrouillage auto en moins de 3 minutes ?"
+  *Démo collective puis challenge individuel sur poste ou VM.*
 ---
 
 ### 8. Espionnage visuel (shoulder surfing)
@@ -124,8 +146,13 @@ Quelqu'un regarde discrètement votre écran.
 - Utiliser un filtre de confidentialité
 
 **Exercices**
-- Quizz sur le placement d'un écran
-- Démonstration avec et sans filtre
+* **Jeu de placement d'écran**
+  → Dans une salle ou à l'aide d'un plan de bureau : où placeriez-vous votre écran pour éviter les regards indiscrets ?
+  *Option de vote avec justification.*
+
+* **Démonstration**
+  → Montrer la différence avec et sans filtre de confidentialité.
+
 
 ---
 
@@ -141,8 +168,12 @@ Perdre une clé avec des fichiers sensibles non chiffrés.
 - Ne jamais brancher une clé inconnue
 
 **Exercices**
-- Atelier de chiffrement
-- Quizz sur les bonnes pratiques
+* **Quizz “Clé à risque”**
+  → Scénario : vous trouvez une clé USB par terre, que faites-vous ? Choix multiple avec discussion en groupe.
+
+* **Démonstration**
+  → Montrer la facilité avec laquelle on peut accéder à une clé non chiffrée.
+
 
 ---
 
@@ -174,8 +205,16 @@ Utiliser un ordinateur dans un lieu public sans protection.
 - Désactiver le Bluetooth
 
 **Exercices**
-- Configurer un VPN
-- Identifier les risques en coworking
+* **Installer et configurer un VPN**
+* **Simulation : Traces numériques**
+  → Ouvrir un navigateur en session publique, se connecter à un site fictif, oublier de se déconnecter. Montrer ensuite l'accès à la session.
+* **Exercice : navigation privée + déconnexion**
+  → Chaque apprenant utilise une session éphémère ou navigation privée, puis vérifie qu'aucune trace n'est laissée.
+* **Jeu “Poste nomade sécurisé”**
+  → Les apprenants disposent d'un budget fictif de 100€. Ils doivent choisir parmi une liste : VPN, écran de confidentialité, sac antivol, etc.
+  *Objectif : maximiser la sécurité avec un budget limité.*
+* **Démonstration : écoute réseau (optionnel)**
+  → Simulation avec capture de trafic sur réseau Wi-Fi public (si niveau du groupe le permet).
 
 ---
 
@@ -224,8 +263,17 @@ Donner l'accès complet à un technicien sans contrôle.
 
 ---
 
-## Ressources utiles
+## Autres
+* **Jeu de rôle : Incident fictif**
+  → Scénario court : "Vous recevez un email étrange de votre direction vous demandant un virement urgent".
+  *Réponses à discuter en petit groupe : que faire ? à qui signaler ?*
 
+* **Escape game numérique**
+  → [Sur la piste du hacker](https://cyber.forge.apps.education.fr/cyber-enquete/)
+  → [Cyber Enquête](https://scape.enepe.fr/cyber-enquete.html)
+  *Adaptés aux débutants et disponibles gratuitement.*
+
+## Resources
 - [https://www.cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr) - guides pratiques
 - [https://haveibeenpwned.com](https://haveibeenpwned.com) - vérifier si un email a été piraté
 - [https://bitwarden.com](https://bitwarden.com) - gestionnaire de mots de passe gratuit
