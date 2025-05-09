@@ -11,8 +11,9 @@
 * **Impact** : Financier, réputationnel. — **Criticité** : 4/5
 * **Cible** : Employés, comptabilité.
 * **Exercices pédagogiques** :
-  * Quizz interactif : Email légitime ou phishing ?
-  * Jeu de rôle : Traiter un email suspect en équipe.
+  * [Quizz interactif : Email légitime ou phishing ?](https://www.guardey.com/fr/anti-phishing-games/)
+  * [Quizz Email](https://www.ftc.gov/business-guidance/small-businesses/cybersecurity/quiz/phishing)
+  * [Quizz Tech Support Scam](https://www.ftc.gov/business-guidance/small-businesses/cybersecurity/quiz/tech-support-scam)
   * Démo : Analyse en direct d’un email (entête, lien, pièce jointe).
 
 ### 2. **Usurpation de compte**
@@ -20,13 +21,13 @@
 * **Description** : Prise de contrôle d’un compte via mot de passe volé ou deviné.
 * **Bonne habitude** : Utiliser 2FA, mots de passe uniques.
 * **Mauvaise habitude** : Réutiliser les mots de passe.
-* **Solutions** : Gestionnaire de mots de passe, 2FA obligatoire.
+* **Solutions** : Gestionnaire de mots de passe, 2FA obligatoire. [BitWarden](https://bitwarden.com/)
 * **Impact** : Financier, opérationnel. — **Criticité** : 4/5
 * **Cible** : Employés, IT.
 * **Exercices** :
   * Atelier : création de mots de passe robustes.
-  * Mini-jeu : identifier le mot de passe le plus faible.
-  * Simulation : activer la 2FA sur un service courant.
+  * Mini-jeu : identifier le mot de passe le plus faible. [Tester](https://www.security.org/how-secure-is-my-password/)
+  * Simulation : activer la 2FA sur un service courant. 
 
 ### 3. **Business Email Compromise (BEC)**
 
@@ -53,6 +54,7 @@
   * Démo : créer un lien sécurisé.
   * Quizz : repérer les erreurs de partage.
   * Atelier : sécuriser un dossier cloud.
+  * [Partage de documents via email et OneDrive - Exercices corrigés](https://www.exocours.com/exercices/Microsoft+Word/Partage+documents+email+OneDrive+Exercices+corrig%C3%A9s/1161)
 
 ---
 
@@ -78,7 +80,7 @@
 * **Solutions** : Sauvegarde auto, détection comportementale.
 * **Impact** : Financier, opérationnel. — **Criticité** : 5/5
 * **Exercices** :
-  * Escape game cybersécurité.
+  * Quizz ransomware [Quizz EN](https://www.ftc.gov/business-guidance/small-businesses/cybersecurity/quiz/ransomware)
   * Démo : impact sur fichiers non sauvegardés.
   * Exercice : configurer une sauvegarde hors-ligne.
 
@@ -149,6 +151,7 @@
 ---
 
 ## Menaces physiques
+[Quizz EN]([https://www.ftc.gov/business-guidance/small-businesses/cybersecurity/quiz](https://www.ftc.gov/business-guidance/small-businesses/cybersecurity/quiz/physical-security))
 
 ### Accès non autorisé & espionnage
 
@@ -199,6 +202,7 @@
   * Rédiger une clause de confidentialité.
   * Simulation : accès prestataire.
   * Jeu : identifier les failles.
+  * [Quizz Vendor Sec](https://www.ftc.gov/business-guidance/small-businesses/cybersecurity/quiz/vendor-security)
 
 ---
 
@@ -315,3 +319,10 @@
   * Atelier : créer un PCA de base.
   * Jeu : reconstituer les étapes de reprise.
   * Démo : restauration depuis sauvegarde.
+
+
+
+[Sur la piste du hacker](https://cyber.forge.apps.education.fr/cyber-enquete/)
+[Escape Game AC Normandie](https://view.genially.com/66474a537609460014772eec)
+[Cyber Enquete](https://scape.enepe.fr/cyber-enquete.html)
+[Cyber3000](https://scape.enepe.fr/cyber3000.html)
