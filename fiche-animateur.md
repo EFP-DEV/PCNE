@@ -41,35 +41,26 @@ Menaces fréquentes :
 
 Conclusion : aucune protection logicielle ne résiste à l’accès physique.
 La seule défense : sauvegarder + vigilance physique. »
+
 ---
 
 ## 0:40 – 1:05 | Atelier Backup (25 min)
 
-**But :** définir un plan de sauvegarde simple.
 
+**But :** que chaque participant définisse et commence à appliquer son **plan personnel de sauvegarde**.
+
+On se concentre sur un outil simple, familier et gratuit : **Google Drive**.
 * Exercice : Où sont mes documents ? mes photos ? mes vidéos ?
 * Démo Google Drive → créer un dossier Backup.
 * Priorités : documents → photos → vidéos.
 * Checklist : Mon schéma de sauvegarde.
 
-* Parfait, détaillons le **contenu pédagogique** de cet atelier pour que tu aies un déroulé clair et actionnable.
-
----
-
-# 0:40 – 1:05 | Atelier Backup (25 min)
-
-**But :** que chaque participant définisse et commence à appliquer son **plan personnel de sauvegarde**.
-On se concentre sur un outil simple, familier et gratuit : **Google Drive**.
-
----
 
 ## 1. Introduction (3 min)
 
 * Question ouverte : *“Qui parmi vous a déjà perdu un fichier important ?”*
 * Message clé : la sauvegarde, ce n’est pas compliqué → il suffit d’un geste simple et régulier.
 * Principe de base : **au moins deux copies, sur deux supports différents**.
-
----
 
 ## 2. Exercice collectif – Où sont mes fichiers ? (7 min)
 
@@ -81,8 +72,6 @@ Chaque participant note sur papier (ou dit à voix haute) :
 
 **But :** créer une prise de conscience → les fichiers sont souvent éparpillés, parfois non protégés.
 
----
-
 ## 3. Démo pratique – Google Drive (10 min)
 
 Projection en direct (ou tutoriel pas à pas au tableau) :
@@ -93,7 +82,6 @@ Projection en direct (ou tutoriel pas à pas au tableau) :
 4. Vérifier qu’il est bien accessible sur un autre appareil (smartphone d’un participant, si possible).
 5. Rappel : Drive n’est pas magique → si un fichier n’y est pas copié, il n’est pas sauvegardé.
 
----
 
 ## 4. Définir les priorités (3 min)
 
@@ -101,7 +89,6 @@ Projection en direct (ou tutoriel pas à pas au tableau) :
 * Priorité 2 : **photos** → gros volume, à organiser progressivement.
 * Priorité 3 : **vidéos** → poids important, parfois à sélectionner plutôt qu’à tout sauvegarder.
 
----
 
 ## 5. Construction de la checklist – Mon schéma de sauvegarde (2 min)
 
@@ -113,7 +100,6 @@ Chaque participant coche ou écrit :
 * [ ] Je sais où sont mes copies (Drive / disque externe).
 * [ ] Je sais quand je ferai ma prochaine sauvegarde (ex. : 1er dimanche du mois).
 
----
 
 ## Résultat attendu
 
