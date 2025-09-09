@@ -113,3 +113,51 @@
 | ☐             | ☐                   | ☐                 | ☐               |                    |
 
 
+
+---
+
+# Detection et reaction
+
+## 1. Mail suspect
+
+| Situation courante          | Investir (solution)                                  | Personne à contacter |
+| --------------------------- | ---------------------------------------------------- | -------------------- |
+| Réception d’un mail douteux | Formation anti-phishing / filtrage mails / antivirus |                      |
+
+## 2. Alerte antivirus
+
+| Situation courante         | Investir (solution)                           | Personne à contacter |
+| -------------------------- | --------------------------------------------- | -------------------- |
+| Message d’alerte antivirus | Maintenir antivirus à jour + abonnement actif |                      |
+
+## 3. Clé USB trouvée ou reçue
+
+| Situation courante        | Investir (solution)                      | Personne à contacter |
+| ------------------------- | ---------------------------------------- | -------------------- |
+| Clé USB inconnue branchée | Bloquer les ports USB / politique claire |                      |
+
+## 4. Ordinateur lent ou comportement étrange
+
+| Situation courante             | Investir (solution)                                  | Personne à contacter |
+| ------------------------------ | ---------------------------------------------------- | -------------------- |
+| Ordinateur ralenti ou instable | Scan antivirus, nettoyage système, support technique |                      |
+
+## 5. Collègue reçoit un virus “de moi”
+
+| Situation courante                      | Investir (solution)                         | Personne à contacter |
+| --------------------------------------- | ------------------------------------------- | -------------------- |
+| Mon adresse envoie un virus à un proche | Filtrage serveur mail + MFA sur compte mail |                      |
+
+## 6. Réflexes universels en cas de doute
+
+| Réflexe clé                        | Investir (solution)                   | Personne à contacter |
+| ---------------------------------- | ------------------------------------- | -------------------- |
+| Ne pas cliquer immédiatement       | Sensibilisation, formation continue   |                      |
+| Demander un avis à un collègue/ami | Culture d’entreprise / charte interne |                      |
+| Isoler l’appareil du réseau        | Procédure interne + switch accessible |                      |
+
+## 7. Rappel clé
+
+* **Investir = mettre en place des outils/procédures pour réduire les risques.**
+* **Personne à contacter = garder un relais humain immédiat en cas de doute.**
+* **Aucun outil ne remplace la réaction rapide + un contact de confiance.**
