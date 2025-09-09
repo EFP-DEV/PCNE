@@ -105,13 +105,11 @@
 | Test de restauration (autre appareil) | ☐            | ☐       | ☐           |  |
 
 
+
 ## 6. Rappel / Méthode de suivi
 
-| Moyen choisi        | Cochez la case               |
-| ------------------- | ---------------------------- |
-| Agenda papier       | ☐                            |
-| Agenda électronique | ☐                            |
-| Alarme smartphone   | ☐                            |
-| Post-it visible     | ☐                            |
-| Autre (à préciser)  |  |
+| Agenda papier | Agenda électronique | Alarme smartphone | Post-it visible | Autre (à préciser) |
+| ------------- | ------------------- | ----------------- | --------------- | ------------------ |
+| ☐             | ☐                   | ☐                 | ☐               |                    |
+
 
