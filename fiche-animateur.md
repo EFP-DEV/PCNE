@@ -1,168 +1,262 @@
-
-# Programme – Session Cybersécurité & Ergonomie (3h)
-
-**Objectif final :** chaque participant repart avec son plan personnel de cybersécurité (5 sections + priorités).
+# FICHE ANIMATEUR COMPLÈTE – Formation Cybersécurité & Ergonomie (3h)
 
 ---
 
-## 0:00 – 0:10 | Présentation + checklist (10 min)
+## **0:00 – 0:10 | ACCUEIL & INTRODUCTION**
 
-* Accueil et objectifs.
-* Distribution de la checklist personnelle.
+### Message d’ouverture
 
----
+« La cybersécurité, ce n’est pas de la paranoïa, c’est comme fermer sa porte à clé. On va apprendre des gestes simples qui deviennent des réflexes. »
 
-## 0:10 – 0:20 | Quiz interactif (10 min)
+### Ice-breaker
 
-* Quiz rapide (papier ou numérique).
-* Correction collective → introduction aux thèmes.
+* « Levez la main si vous avez déjà perdu des photos importantes »
+* « Qui a déjà reçu un SMS bizarre de sa banque ? »
+* « Qui a mal au dos après une journée de travail ? »
 
----
+### Objectif clair
 
-## 0:20 – 0:40 | Clé USB piégée & sécurité physique (20 min)
-
-**But :** comprendre que l’accès physique = accès total.
-
-
-Vidéo muette (3 min)
-→ Montage muet avec sous-titres : USBKill, Rubber Ducky, BadUSB.
-
-Réaction à chaud (5 min)
-« Qui a hésité avant de brancher ? Qu’avez-vous ressenti ? »
-
-Checklist : Mes règles de vigilance physique.
-Menaces fréquentes :
-
-    Supports amovibles piégés (clés, câbles, chargeurs)
-    Vol ou perte d’appareil
-    Postes laissés sans surveillance
-    Wi-Fi public non sécurisé
-    Destruction matérielle volontaire (surtension, incendie…)
-
-Conclusion : aucune protection logicielle ne résiste à l’accès physique.
-La seule défense : sauvegarder + vigilance physique. »
+« Dans 3 heures, vous repartirez avec 5 à 10 réflexes concrets à appliquer dès demain matin. »
 
 ---
 
-## 0:40 – 1:05 | Atelier Backup (25 min)
+## **0:10 – 0:20 | QUIZ D’ENTRÉE INTERACTIF**
 
+### Questions avec mini-leçons
 
-**But :** que chaque participant définisse et commence à appliquer son **plan personnel de sauvegarde**.
+**Q1 : Votre mot de passe idéal c’est ?**
 
-On se concentre sur un outil simple, familier et gratuit : **Google Drive**.
-* Exercice : Où sont mes documents ? mes photos ? mes vidéos ?
-* Démo Google Drive → créer un dossier Backup.
-* Priorités : documents → photos → vidéos.
-* Checklist : Mon schéma de sauvegarde.
+* a) 123456 ❌
+* b) P\@ssw0rd! ❌
+* c) JadoreLesCrepesDeMaGrandMere2024! ✅
 
+Leçon : « Un bon mot de passe = une phrase personnelle longue que vous seul connaissez. La longueur prime sur la complexité. »
 
-## 1. Introduction (3 min)
+**Q2 : Vous trouvez une clé USB “Salaires 2024” par terre. Vous faites quoi ?**
 
-* Question ouverte : *“Qui parmi vous a déjà perdu un fichier important ?”*
-* Message clé : la sauvegarde, ce n’est pas compliqué → il suffit d’un geste simple et régulier.
-* Principe de base : **au moins deux copies, sur deux supports différents**.
+* a) Je regarde vite fait ❌
+* b) Je la donne à l’accueil ✅
+* c) Je la jette ✅
 
-## 2. Exercice collectif – Où sont mes fichiers ? (7 min)
+Leçon : « Une clé USB inconnue peut griller votre PC en 3 secondes ou voler tous vos mots de passe. »
 
-Chaque participant note sur papier (ou dit à voix haute) :
+**Q3 : Le meilleur endroit pour noter ses mots de passe ?**
 
-* Où sont mes documents importants (contrats, factures, CV, scolarité…) ?
-* Où sont mes photos principales (smartphone, disque dur, cloud…) ?
-* Où sont mes vidéos (smartphone, disque dur externe…) ?
-
-**But :** créer une prise de conscience → les fichiers sont souvent éparpillés, parfois non protégés.
-
-## 3. Démo pratique – Google Drive (10 min)
-
-Projection en direct (ou tutoriel pas à pas au tableau) :
-
-1. Connexion à Google Drive.
-2. Création d’un **dossier “Backup”** à la racine.
-3. Glisser-déposer un fichier test (ex. : CV ou PDF simple).
-4. Vérifier qu’il est bien accessible sur un autre appareil (smartphone d’un participant, si possible).
-5. Rappel : Drive n’est pas magique → si un fichier n’y est pas copié, il n’est pas sauvegardé.
-
-
-## 4. Définir les priorités (3 min)
-
-* Priorité 1 : **documents** → souvent petits, faciles à sauvegarder, mais essentiels.
-* Priorité 2 : **photos** → gros volume, à organiser progressivement.
-* Priorité 3 : **vidéos** → poids important, parfois à sélectionner plutôt qu’à tout sauvegarder.
-
-
-## 5. Construction de la checklist – Mon schéma de sauvegarde (2 min)
-
-Chaque participant coche ou écrit :
-
-* [ ] Mes documents sont sauvegardés.
-* [ ] Mes photos principales sont sauvegardées.
-* [ ] Mes vidéos sont sauvegardées (au moins les plus importantes).
-* [ ] Je sais où sont mes copies (Drive / disque externe).
-* [ ] Je sais quand je ferai ma prochaine sauvegarde (ex. : 1er dimanche du mois).
-
-
-## Résultat attendu
-
-À la fin de l’atelier, chaque participant :
-* Sait **où sont ses fichiers**.
-* A vu concrètement **comment créer un dossier de sauvegarde**.
-* A une **priorité claire** pour demain (sauvegarder ses documents en premier).
-
-
+* a) Post-it sous le clavier ❌
+* b) Fichier Excel “motsdepasse.xlsx” ❌
+* c) Carnet fermé à clé ou gestionnaire ✅
 
 ---
 
-## 1:05 – 1:30 | Atelier Détection & Réactions humaines (25 min)
+## **0:20 – 0:40 | MODULE 1 : SÉCURITÉ PHYSIQUE – "Le monde réel existe"**
 
-**But :** savoir quoi faire en cas de doute.
+### Vidéo choc (3 min)
 
-* Simulation d’évènements : mail suspect, alerte antivirus, clé USB trouvée, ordinateur lent, collègue qui reçoit un virus de vous.
-* Crowd-sourcing des réactions → élaboration d’une mini-charte commune.
-* Checklist : Mes réflexes en cas d’incident.
+* Clé USB Killer détruisant un PC
+* Rubber Ducky volant des mots de passe
+* Caméra filmant quelqu’un tapant son code
 
----
+### Les 5 règles d’or du bureau
 
-## 1:30 – 1:55 | Atelier Smartphone (25 min)
+1. **Windows + L = votre meilleur ami**
+2. **La règle du bureau propre**
+3. **La clé USB = seringue usagée**
+4. **Le shoulder surfing existe**
+5. **Vérifiez vos ports**
 
-**But :** sécuriser son outil principal du quotidien.
+### Exercice pratique : Audit de bureau
 
-* Paramètres essentiels : code/PIN, biométrie, mises à jour.
-* Sauvegarde automatique (Google / Apple).
-* Authentification à deux facteurs.
-* Gestion des autorisations d’applications.
-* Exercice : chacun coche ce qu’il fait déjà et ce qu’il doit mettre en place.
-* Checklist : Mes réglages smartphone.
-
----
-
-## 1:55 – 2:20 | Atelier Ergo (25 min)
-
-**But :** adopter une posture saine devant écran et smartphone.
-
-* Démo : position assise, écran, clavier/souris, smartphone.
-* Exercice pratique en binômes : correction mutuelle.
-* Règle 20-20-20 (repos visuel).
-* Checklist : Mon poste de travail ergonomique.
+Binômes : inspection croisée (papiers, écran, ports, tiroirs).
 
 ---
 
-## 2:20 – 2:50 | Atelier RGPD simplifié (30 min)
+## **0:40 – 1:05 | MODULE 2 : SAUVEGARDE – "Votre assurance-vie numérique"**
 
-**But :** comprendre les bases pratiques du RGPD.
+### Histoire d’horreur et scénario positif
 
-* Présentation de 3 documents :
+* Marie, comptable, perd 5 ans de factures (3000 € de perte).
+* Paul, téléphone perdu, tout récupéré via Google Photos.
 
-  * Formulaire de consentement.
-  * Réponse à une demande d’accès.
-  * Réponse à une demande de suppression.
-* Exercice en binômes : remplir un document type.
-* Mini-synthèse : Consentement – Transparence – Accès – Oubli.
-* Checklist : Mes engagements RGPD.
+### Méthode 3-2-1 simplifiée
+
+* 3 copies
+* 2 supports différents
+* 1 hors site
+
+### Démonstration Google Drive (15 min)
+
+Connexion, organisation de dossiers, upload en direct, partage sécurisé.
+
+### Plan d’action personnel
+
+* Ce soir : sauvegarder documents administratifs
+* Cette semaine : photos de famille
+* Ce mois : emails importants
+* Règle du dimanche : rappel mensuel
 
 ---
 
-## 2:50 – 3:00 | Clôture (10 min)
+## **1:05 – 1:30 | MODULE 3 : DÉTECTION DES MENACES – "Développer son 6e sens"**
 
-* Chaque participant écrit ses 3 priorités immédiates.
-* Tour de table : “Demain, je commence par…”.
-* Message final : la cybersécurité et l’ergonomie, ce sont des réflexes simples, répétés.
+### Le phishing décortiqué
+
+Analyse d’un faux email, explication des 5 indices (fautes, urgence, émotions, domaine, pièces jointes).
+
+### Exercice collectif
+
+Projection de 5 emails → vote à main levée (dont un piège volontaire).
+
+### Malware : symptômes
+
+PC lent, popups, extensions bizarres, ventilateur à fond.
+Réflexe : débrancher réseau, ne pas éteindre, appeler support, noter faits.
+
+### Ingénierie sociale
+
+* Faux technicien → rappeler numéro officiel
+* Patron pressé → confirmer par appel
+* Collègue sans badge → l’accompagner à l’accueil
+
+### Réflexe STOP
+
+Suspicion – Temps – Opinion – Protection
+
+---
+
+## **1:30 – 1:55 | MODULE 4 : SMARTPHONE – "Votre coffre-fort de poche"**
+
+### Configuration express sécurité
+
+* Code PIN solide, verrouillage auto, mises à jour automatiques
+* Sauvegarde photos, WhatsApp, contacts
+* Double authentification (2FA) sur Gmail, banque, réseaux pros
+
+### Gestion des applications
+
+Exercice de ménage → suppression apps inutiles, vérification des permissions.
+
+### Antivol et effacement
+
+Android : Find My Device – iPhone : Localiser.
+
+### Check-list du dimanche soir
+
+1. Supprimer photos inutiles
+2. Vérifier sauvegarde WhatsApp
+3. Supprimer une application
+4. Vider corbeille photos
+5. Redémarrer le téléphone
+
+---
+
+## **1:55 – 2:20 | MODULE 5 : ERGONOMIE – "Votre corps vous dira merci"**
+
+### La position parfaite
+
+Démonstration : pieds à plat, dos droit, coudes à 90°, poignets droits.
+
+### L’écran parfait
+
+Haut au niveau des yeux, distance bras tendu, inclinaison légère.
+
+### Smartphone et cervicales
+
+Tête droite = 5 kg, inclinée 60° = 27 kg.
+Solution : technique du selfie.
+
+### Auto-évaluation rapide
+
+Avant et après réglages, noter son confort (1 = douleurs fortes, 5 = confort total).
+
+### Règle 20-20-20
+
+Toutes les 20 minutes, regarder un objet à plus de 6 mètres pendant 20 secondes.
+
+### Étirements de survie bureau
+
+Le chat – La chouette – Les ailes d’ange.
+
+### Programmer les pauses
+
+Applications gratuites (Stretchly, EyeLeo) ou astuce café.
+
+---
+
+## **2:20 – 2:50 | MODULE 6 : RGPD – "Respecter et se faire respecter"**
+
+### RGPD en 4 phrases simples
+
+1. Je demande avant de prendre (Consentement)
+2. J’explique ce que je fais (Transparence)
+3. Je montre ce que j’ai (Accès)
+4. Je supprime si on me le demande (Oubli)
+
+### Consentement pratique
+
+Cases à cocher claires, pas de case précochée, pas de consentement caché.
+
+### Répondre à une demande
+
+Exemple d’email type, délai légal 30 jours.
+
+### Le droit à l’oubli
+
+Supprimer après 3 ans d’inactivité ou fin contrat, sauf obligations légales.
+
+### Organisation minimale
+
+1. Un responsable désigné
+2. Un registre Excel très simple des traitements
+3. Une politique de confidentialité (modèle CNIL)
+4. Une procédure de réponse aux demandes
+
+### Exemple concret de sanction
+
+En 2022, une petite entreprise artisanale a reçu une amende de 5000 € pour conservation abusive de données clients.
+Message clé : le RGPD concerne aussi les petites structures.
+
+### Exercice : mini-audit
+
+4 questions simples : données clients, mot de passe, suppression, consentement écrit.
+
+---
+
+## **2:50 – 3:00 | CLÔTURE – "Vos 3 actions pour demain"**
+
+### Exercice final : plan 3-3-3
+
+**3 actions pour demain, cette semaine, ce mois.**
+
+### Tour de table
+
+« En 10 secondes : quelle est la chose qui vous a le plus marqué ? »
+
+### Groupe de suivi
+
+Créer un groupe WhatsApp « Cyber-Vigilants 2025 » pour échanges et alertes.
+
+### Les 5 outils gratuits recommandés
+
+Bitwarden, Google Authenticator, Stretchly, UBlock Origin, Signal.
+
+### Ressources pour continuer
+
+cybermalveillance.gouv.fr – haveibeenpwned.com – signal.org – bitwarden.com
+
+### Message de clôture
+
+« La sécurité parfaite n’existe pas, mais l’insécurité totale non plus. Chaque petit geste compte. Un ordinateur verrouillé, c’est un hacker frustré. Une sauvegarde, c’est une journée sauvée. Un bon mot de passe, c’est des problèmes évités. Vous n’êtes pas obligés de tout faire, mais faites quelque chose. Ce soir. Maintenant. »
+
+### Check final
+
+Lever la main si vous allez faire au moins une action ce soir → objectif : 100 %.
+
+---
+
+## NOTES POUR L’ANIMATEUR
+
+* Phrases chocs : « Un mot de passe, c’est comme un slip : on ne le partage pas » ; « Sauvegarder, c’est pleurer une fois au lieu de 100 » ; « La sécurité, c’est 90 % d’habitudes, 10 % de technologie ».
+* Si le groupe décroche : pause étirement, anecdote personnelle, question collective, exercice surprise.
+* Gestion du temps : timer visible, annoncer « plus que 5 minutes », si retard sacrifier le RGPD (pas la sauvegarde).
+* Adapter au niveau : débutants → basiques ; intermédiaires → démos techniques ; avancés → RGPD et menaces.
+* Matériel : vidéoprojecteur, Wi-Fi, checklists imprimées, stylos, post-it, clé USB de démo, câble antivol, filtre confidentialité.
