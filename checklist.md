@@ -1,10 +1,60 @@
+# Vigilance physique
 
-Parfait, voici la **version complète du formulaire “Mon plan de sauvegarde personnel”** avec des **tableaux harmonisés** pour chaque section.
-Ce format est clair, lisible et pratique à remplir à la main (ou à l’écran).
+## 1. Supports amovibles (clés USB, câbles, chargeurs)
 
----
+| Situation courante                      | Investir (solution)                                                      | Miser sur le backup |
+| --------------------------------------- | ------------------------------------------------------------------------ | ------------------- |
+| Clé USB trouvée ou donnée par quelqu’un | Bloquer les ports USB ou utiliser uniquement ses propres clés sécurisées | —                   |
+| Chargeur ou câble prêté                 | Acheter un chargeur/câble certifié et personnel                          | —                   |
+| Utilisation d’un disque dur externe     | Utiliser un disque chiffré (BitLocker, VeraCrypt)                        | ☐                   |
 
-# Mon plan de sauvegarde personnel
+
+## 2. Vol ou perte d’appareil
+
+| Type d’appareil     | Investir (solution)                                  | Miser sur le backup |
+| ------------------- | ---------------------------------------------------- | ------------------- |
+| Ordinateur portable | Activer le chiffrement disque + housse antivol       | ☐                   |
+| Smartphone          | Code PIN/biométrie + localisation à distance activée | ☐                   |
+| Disque dur externe  | Stockage dans un coffre/tiroir sécurisé              | ☐                   |
+| Clé USB personnelle | Clé USB sécurisée avec mot de passe ou chiffrement   | ☐                   |
+
+
+## 3. Postes laissés sans surveillance
+
+| Situation courante             | Investir (solution)                             | Miser sur le backup |
+| ------------------------------ | ----------------------------------------------- | ------------------- |
+| Je quitte mon bureau 2 minutes | Activer le verrouillage auto (30 sec – 1 min)   | —                   |
+| Pause-café / réunion           | Fermer à clé le bureau                          | —                   |
+| Fin de journée                 | Utiliser un câble antivol ou rangement sécurisé | —                   |
+
+
+## 4. Connexions réseau (Wi-Fi public, partages)
+
+| Situation courante                    | Investir (solution)                           | Miser sur le backup |
+| ------------------------------------- | --------------------------------------------- | ------------------- |
+| Connexion Wi-Fi dans un café ou hôtel | Utiliser un VPN fiable                        | —                   |
+| Partage de connexion avec collègues   | Configurer un partage via smartphone sécurisé | —                   |
+| Utilisation d’un VPN                  | Souscrire à un service VPN reconnu            | —                   |
+
+
+## 5. Risques de destruction matérielle
+
+| Menace possible               | Investir (solution)                          | Miser sur le backup |
+| ----------------------------- | -------------------------------------------- | ------------------- |
+| Surtension (foudre, panne)    | Utiliser une multiprise avec parasurtenseur  | ☐                   |
+| Incendie / dégât des eaux     | Ranger les supports sensibles hors du bureau | ☐                   |
+| Mauvaise manipulation humaine | Installer des housses de protection/boîtiers | ☐                   |
+
+
+## Rappels clés
+
+* Quand le risque détruit ou compromet l’appareil **sans retour possible** (clé USB piégée, Wi-Fi public, poste ouvert), le **backup ne sert à rien** → seule la **vigilance** ou un **investissement technique** protège.
+* Quand le risque est une **perte ou destruction de données** (vol, incendie, panne), le **backup est la seule assurance**.
+
+--- 
+
+
+# Plan de sauvegarde personnel
 
 ## 1. Localisation de mes fichiers
 
@@ -16,7 +66,6 @@ Ce format est clair, lisible et pratique à remplir à la main (ou à l’écran
 | Photos personnelles      |                                                                  |
 | Vidéos importantes       |                                                                  |
 
----
 
 ## 2. Règle 3-2-1
 
@@ -28,7 +77,6 @@ Ce format est clair, lisible et pratique à remplir à la main (ou à l’écran
 | Mes 2 supports     |  |
 | Ma copie hors site |  |
 
----
 
 ## 3. Ordre de sauvegarde
 
@@ -38,7 +86,6 @@ Ce format est clair, lisible et pratique à remplir à la main (ou à l’écran
 | 2        |                                          |
 | 3        |                                          |
 
----
 
 ## 4. Fréquence de sauvegarde
 
@@ -48,7 +95,6 @@ Ce format est clair, lisible et pratique à remplir à la main (ou à l’écran
 | Photos          | ☐         | ☐            | ☐       | ☐      |  |
 | Vidéos          | ☐         | ☐            | ☐       | ☐      |  |
 
----
 
 ## 5. Vérification de mes sauvegardes
 
@@ -58,7 +104,6 @@ Ce format est clair, lisible et pratique à remplir à la main (ou à l’écran
 | Règle 3-2-1 respectée                 | ☐            | ☐       | ☐           |  |
 | Test de restauration (autre appareil) | ☐            | ☐       | ☐           |  |
 
----
 
 ## 6. Rappel / Méthode de suivi
 
