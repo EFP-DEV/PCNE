@@ -1,55 +1,72 @@
 
+Parfait, voici la **version complète du formulaire “Mon plan de sauvegarde personnel”** avec des **tableaux harmonisés** pour chaque section.
+Ce format est clair, lisible et pratique à remplir à la main (ou à l’écran).
+
+---
 
 # Mon plan de sauvegarde personnel
 
 ## 1. Localisation de mes fichiers
 
-* Documents professionnels : ____________________________
-* Documents personnels : ____________________________
-* Photos professionnelles : ____________________________
-* Photos personnelles : ____________________________
-* Vidéos importantes : ____________________________
+| Type de fichier          | Où se trouvent-ils actuellement ? (chemin, support, application) |
+| ------------------------ | ---------------------------------------------------------------- |
+| Documents professionnels |                                                                  |
+| Documents personnels     |                                                                  |
+| Photos professionnelles  |                                                                  |
+| Photos personnelles      |                                                                  |
+| Vidéos importantes       |                                                                  |
+
+---
 
 ## 2. Règle 3-2-1
 
-(3 copies – 2 supports différents – 1 hors site)
+*(3 copies – 2 supports différents – 1 hors site)*
 
-* Mes 3 copies : _____________________________________
-* Mes 2 supports : ___________________________________
-* Ma copie “hors site” (cloud, autre lieu) : _____________
+| Élément à définir  | Réponse personnelle                    |
+| ------------------ | -------------------------------------- |
+| Mes 3 copies       |  |
+| Mes 2 supports     |  |
+| Ma copie hors site |  |
 
+---
 
 ## 3. Ordre de sauvegarde
 
-1. ________________________
-2. ________________________
-3. ________________________
+| Priorité | Type de fichier à sauvegarder en premier |
+| -------- | ---------------------------------------- |
+| 1        |                                          |
+| 2        |                                          |
+| 3        |                                          |
 
+---
 
 ## 4. Fréquence de sauvegarde
 
 | Type de fichier | Quotidien | Hebdomadaire | Mensuel | Annuel | Autre (à préciser)     |
 | --------------- | --------- | ------------ | ------- | ------ | ---------------------- |
-| Documents       | ☐         | ☐            | ☐       | ☐      | \_\_\_\_\_\_\_\_\_\_\_ |
-| Photos          | ☐         | ☐            | ☐       | ☐      | \_\_\_\_\_\_\_\_\_\_\_ |
-| Vidéos          | ☐         | ☐            | ☐       | ☐      | \_\_\_\_\_\_\_\_\_\_\_ |
+| Documents       | ☐         | ☐            | ☐       | ☐      |  |
+| Photos          | ☐         | ☐            | ☐       | ☐      |  |
+| Vidéos          | ☐         | ☐            | ☐       | ☐      |  |
 
+---
 
-## 5. Vérification des sauvegardes
+## 5. Vérification de mes sauvegardes
 
-| Action à vérifier                     | Hebdomadaire | Mensuel | Trimestriel | Autre      |
-| ------------------------------------- | ------------ | ------- | ----------- | ---------- |
-| Sauvegarde complète réalisée          | ☐            | ☐       | ☐           | \_\_\_\_\_ |
-| Règle 3-2-1 respectée                 | ☐            | ☐       | ☐           | \_\_\_\_\_ |
-| Test de restauration (autre appareil) | ☐            | ☐       | ☐           | \_\_\_\_\_ |
+| Action à vérifier                     | Hebdomadaire | Mensuel | Trimestriel | Autre (à préciser)     |
+| ------------------------------------- | ------------ | ------- | ----------- | ---------------------- |
+| Sauvegarde complète réalisée          | ☐            | ☐       | ☐           |  |
+| Règle 3-2-1 respectée                 | ☐            | ☐       | ☐           |  |
+| Test de restauration (autre appareil) | ☐            | ☐       | ☐           |  |
 
-
+---
 
 ## 6. Rappel / Méthode de suivi
 
-* □ Agenda papier
-* □ Agenda électronique (Google, Outlook, etc.)
-* □ Alarme smartphone
-* □ Post-it visible
-* □ Autre : ______________________
+| Moyen choisi        | Cochez la case               |
+| ------------------- | ---------------------------- |
+| Agenda papier       | ☐                            |
+| Agenda électronique | ☐                            |
+| Alarme smartphone   | ☐                            |
+| Post-it visible     | ☐                            |
+| Autre (à préciser)  |  |
 
