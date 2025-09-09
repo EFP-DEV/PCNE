@@ -161,3 +161,62 @@
 * **Investir = mettre en place des outils/procédures pour réduire les risques.**
 * **Personne à contacter = garder un relais humain immédiat en cas de doute.**
 * **Aucun outil ne remplace la réaction rapide + un contact de confiance.**
+
+
+
+
+
+
+Excellent ! On simplifie encore le langage : **Agir** (solution) vs **Laisser faire** (risque).
+Voici la fiche smartphone reformulée dans ce style plus direct.
+
+---
+
+# Smartphone
+
+## 1. Sécurité de base
+
+| Paramètre essentiel | Agir (ce que je mets en place)              | Laisser faire (ce qui peut arriver) |
+| ------------------- | ------------------------------------------- | ----------------------------------- |
+| Code / PIN          | Activer un code PIN robuste (6 chiffres)    | Vol d’accès complet au téléphone    |
+| Biométrie           | Activer empreinte ou reconnaissance faciale | Usurpation si code simple partagé   |
+| Mises à jour        | Activer les mises à jour automatiques       | Infection par failles connues       |
+
+
+## 2. Sauvegarde automatique
+
+| Situation courante   | Agir (ce que je mets en place)                   | Laisser faire (ce qui peut arriver)     |
+| -------------------- | ------------------------------------------------ | --------------------------------------- |
+| Perte/vol de données | Activer sauvegarde automatique (Google / iCloud) | Perte définitive de données             |
+| Restauration         | Tester une restauration sur un autre appareil    | Sauvegarde inutilisable en cas de crise |
+
+
+## 3. Authentification à deux facteurs (2FA)
+
+| Situation courante                        | Agir (ce que je mets en place)                                | Laisser faire (ce qui peut arriver)       |
+| ----------------------------------------- | ------------------------------------------------------------- | ----------------------------------------- |
+| Comptes sensibles (mail, banque, réseaux) | Activer la double authentification (app Authenticator ou SMS) | Piratage de compte avec mot de passe volé |
+
+
+## 4. Gestion des applications
+
+| Situation courante    | Agir (ce que je mets en place)                  | Laisser faire (ce qui peut arriver)    |
+| --------------------- | ----------------------------------------------- | -------------------------------------- |
+| Applications inutiles | Supprimer les applis non utilisées              | Faille de sécurité dormante            |
+| Permissions sensibles | Révoquer accès caméra, micro, localisation      | Espionnage discret / fuite de données  |
+| Mises à jour applis   | Activer mises à jour automatiques dans le store | Exploitation de vulnérabilités connues |
+
+
+## 5. Récupération en cas de perte/vol
+
+| Situation courante      | Agir (ce que je mets en place)                  | Laisser faire (ce qui peut arriver)        |
+| ----------------------- | ----------------------------------------------- | ------------------------------------------ |
+| Localisation à distance | Activer “Localiser mon appareil” (Google/Apple) | Appareil irrécupérable en cas de vol/perte |
+| Effacement à distance   | Activer l’option d’effacement complet           | Données sensibles exploitées par un tiers  |
+
+
+## 6. Rappel / Méthode de suivi
+
+| Vérification mensuelle | Code PIN | Sauvegarde | 2FA | Permissions | Localisation active |
+| ---------------------- | -------- | ---------- | --- | ----------- | ------------------- |
+|                        | ☐        | ☐          | ☐   | ☐           | ☐                   |
