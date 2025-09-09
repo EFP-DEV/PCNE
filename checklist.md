@@ -220,3 +220,132 @@ Voici la fiche smartphone reformulée dans ce style plus direct.
 | Vérification mensuelle | Code PIN | Sauvegarde | 2FA | Permissions | Localisation active |
 | ---------------------- | -------- | ---------- | --- | ----------- | ------------------- |
 |                        | ☐        | ☐          | ☐   | ☐           | ☐                   |
+
+
+---
+
+# Travail ergonomique
+
+
+## 1. Position assise
+
+| Situation courante         | Risque (si je laisse faire)                       | Importance |
+| -------------------------- | ------------------------------------------------- | ---------- |
+| Hauteur de la chaise       | Mauvaise circulation, douleurs jambes et dos      | ☐ ☐ ☐ ☐ ☐  |
+| Dos et épaules             | Tensions musculaires, fatigue, mal de dos         | ☐ ☐ ☐ ☐ ☐  |
+| Poignets devant le clavier | Tendinites, douleurs aux poignets, tunnel carpien | ☐ ☐ ☐ ☐ ☐  |
+
+## 2. Écran et poste de travail
+
+| Situation courante  | Risque (si je laisse faire)               | Importance |
+| ------------------- | ----------------------------------------- | ---------- |
+| Hauteur de l’écran  | Raideur de nuque, migraines               | ☐ ☐ ☐ ☐ ☐  |
+| Distance de l’écran | Fatigue visuelle, baisse de concentration | ☐ ☐ ☐ ☐ ☐  |
+| Éclairage           | Reflets, fatigue oculaire, maux de tête   | ☐ ☐ ☐ ☐ ☐  |
+
+## 3. Smartphone
+
+| Situation courante     | Risque (si je laisse faire)           | Importance |
+| ---------------------- | ------------------------------------- | ---------- |
+| Lecture sur smartphone | Douleurs cervicales, “text neck”      | ☐ ☐ ☐ ☐ ☐  |
+| Durée d’utilisation    | Fatigue visuelle, surcharge cognitive | ☐ ☐ ☐ ☐ ☐  |
+
+
+## 4. Pauses et micro-habitudes
+
+| Situation courante   | Risque (si je laisse faire)                        | Importance |
+| -------------------- | -------------------------------------------------- | ---------- |
+| Temps devant l’écran | Sédentarité, baisse d’énergie, douleurs chroniques | ☐ ☐ ☐ ☐ ☐  |
+| Règle 20-20-20 (vue) | Fatigue oculaire, vue brouillée, migraines         | ☐ ☐ ☐ ☐ ☐  |
+| Étirements rapides   | Raideurs, perte de mobilité articulaire            | ☐ ☐ ☐ ☐ ☐  |
+
+## 5. Rappel / Méthode de suivi
+
+| Vérification hebdomadaire | Ma méthode choisie (agenda, alarme, binôme…) |
+| ------------------------- | -------------------------------------------- |
+|                           |                                              |
+
+---
+
+# Réglages smartphone
+
+## 1. Sécurité de base
+
+| Paramètre / Situation      | Risque si absent               | Ma priorité personnelle           |
+| -------------------------- | ------------------------------ | --------------------------------- |
+| Code / PIN robuste         | Téléphone accessible à tous    | ☐ Urgent ☐ Important ☐ Secondaire |
+| Mises à jour système       | Infection via failles connues  | ☐ Urgent ☐ Important ☐ Secondaire |
+| Biométrie (empreinte/face) | Usurpation si code trop simple | ☐ Urgent ☐ Important ☐ Secondaire |
+
+## 2. Sauvegarde automatique
+
+| Paramètre / Situation           | Risque si absent                        | Ma priorité personnelle           |
+| ------------------------------- | --------------------------------------- | --------------------------------- |
+| Sauvegarde cloud (Google/Apple) | Perte définitive de données             | ☐ Urgent ☐ Important ☐ Secondaire |
+| Test de restauration            | Sauvegarde inutilisable en cas de crise | ☐ Urgent ☐ Important ☐ Secondaire |
+
+## 3. Authentification à deux facteurs (2FA)
+
+| Paramètre / Situation                             | Risque si absent                           | Ma priorité personnelle           |
+| ------------------------------------------------- | ------------------------------------------ | --------------------------------- |
+| 2FA sur comptes sensibles (mail, banque, réseaux) | Piratage de comptes avec mot de passe volé | ☐ Urgent ☐ Important ☐ Secondaire |
+
+## 4. Gestion des applications
+
+| Paramètre / Situation                               | Risque si absent                       | Ma priorité personnelle           |
+| --------------------------------------------------- | -------------------------------------- | --------------------------------- |
+| Suppression applis inutiles                         | Faille de sécurité dormante            | ☐ Urgent ☐ Important ☐ Secondaire |
+| Permissions sensibles (caméra, micro, localisation) | Espionnage, fuite de données           | ☐ Urgent ☐ Important ☐ Secondaire |
+| Mises à jour applis                                 | Exploitation de vulnérabilités connues | ☐ Urgent ☐ Important ☐ Secondaire |
+
+## 5. Récupération en cas de perte/vol
+
+| Paramètre / Situation   | Risque si absent                           | Ma priorité personnelle           |
+| ----------------------- | ------------------------------------------ | --------------------------------- |
+| Localisation à distance | Appareil irrécupérable en cas de vol/perte | ☐ Urgent ☐ Important ☐ Secondaire |
+| Effacement à distance   | Données sensibles exploitées par un tiers  | ☐ Urgent ☐ Important ☐ Secondaire |
+
+
+Parfait ! Voici la fiche **Mes engagements RGPD** en **Format C – Priorité personnelle**.
+Chaque participant identifie le **risque** s’il ne respecte pas la règle et coche sa **priorité (Urgent / Important / Secondaire)**.
+
+---
+
+# Engagements RGPD
+
+## 1. Consentement
+
+| Situation / Document                      | Risque si absent ou mal géré               | Ma priorité personnelle           |
+| ----------------------------------------- | ------------------------------------------ | --------------------------------- |
+| Formulaire de consentement                | Collecte illégale, plaintes de clients     | ☐ Urgent ☐ Important ☐ Secondaire |
+| Explication claire de l’usage des données | Manque de transparence, perte de confiance | ☐ Urgent ☐ Important ☐ Secondaire |
+
+## 2. Transparence
+
+| Situation / Pratique                       | Risque si absent ou mal géré            | Ma priorité personnelle           |
+| ------------------------------------------ | --------------------------------------- | --------------------------------- |
+| Politique de confidentialité claire        | Méfiance des utilisateurs, image ternie | ☐ Urgent ☐ Important ☐ Secondaire |
+| Communication en cas d’incident de données | Perte de crédibilité, sanctions         | ☐ Urgent ☐ Important ☐ Secondaire |
+
+## 3. Accès aux données
+
+| Situation / Document          | Risque si absent ou mal géré                | Ma priorité personnelle           |
+| ----------------------------- | ------------------------------------------- | --------------------------------- |
+| Réponse à une demande d’accès | Non-conformité légale, amendes potentielles | ☐ Urgent ☐ Important ☐ Secondaire |
+| Délai de réponse (1 mois max) | Risque juridique, mauvaise relation client  | ☐ Urgent ☐ Important ☐ Secondaire |
+
+## 4. Droit à l’oubli (suppression)
+
+| Situation / Document                 | Risque si absent ou mal géré                    | Ma priorité personnelle           |
+| ------------------------------------ | ----------------------------------------------- | --------------------------------- |
+| Réponse à une demande de suppression | Conservation illégale, sanction CNIL/GDPR       | ☐ Urgent ☐ Important ☐ Secondaire |
+| Procédure interne claire             | Oubli ou refus non justifié, perte de confiance | ☐ Urgent ☐ Important ☐ Secondaire |
+
+## 5. Organisation interne
+
+| Situation / Pratique                                | Risque si absent ou mal géré                   | Ma priorité personnelle           |
+| --------------------------------------------------- | ---------------------------------------------- | --------------------------------- |
+| Responsable RGPD identifié                          | Personne ne sait quoi faire en cas de demande  | ☐ Urgent ☐ Important ☐ Secondaire |
+| Durée de conservation définie                       | Données gardées trop longtemps, non-conformité | ☐ Urgent ☐ Important ☐ Secondaire |
+| Contrat clair avec prestataires (cloud, hébergeurs) | Données mal protégées, responsabilité engagée  | ☐ Urgent ☐ Important ☐ Secondaire |
+
