@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Training</title>
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0a0a0a;
+            color: #00ff00;
+            overflow: hidden;
+            line-height: 1.4;
+        }
+        
+        .swiper {
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px 80px;
+            position: relative;
+            border: 1px solid #333;
+        }
+        
+        .slide-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .slide-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .slide-subtitle {
+            font-size: 1.2rem;
+            color: #ffff00;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+        
+        .slide-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #cccccc;
+        }
+        
+        .slide-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .slide-list li {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+            color: #cccccc;
+            line-height: 1.5;
+        }
+        
+        .slide-list li:before {
+            content: ">";
+            color: #ff0000;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .quote {
+            font-style: normal;
+            font-size: 1.2rem;
+            color: #ffff00;
+            margin: 30px 0;
+            padding: 25px;
+            border-left: 4px solid #ffff00;
+            background: rgba(255, 255, 0, 0.08);
+        }
+        
+        .highlight {
+            background: rgba(0, 255, 0, 0.1);
+            padding: 20px;
+            border: 1px solid #00ff00;
+            margin: 25px 0;
+            color: #ffffff;
+            font-size: 1.1rem;
+        }
+        
+        .slide-number {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+        
+        .progress-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            background: #00ff00;
+            transition: width 0.3s ease;
+        }
+        
+        .swiper-pagination-progressbar {
+            background: #333 !important;
+        }
+        
+        .swiper-pagination-progressbar-fill {
+            background: #00ff00 !important;
+        }
+        
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #00ff00 !important;
+            background: rgba(0, 0, 0, 0.8);
+            width: 40px;
+            height: 40px;
+            border: 1px solid #00ff00;
+        }
+        
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .module-header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 25px;
+            border: 1px solid #333;
+            margin-bottom: 30px;
+        }
+        
+        .time-badge {
+            display: inline-block;
+            background: #ff0000;
+            color: #000;
+            padding: 6px 15px;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+        
+        .quiz-option {
+            background: rgba(51, 51, 51, 0.5);
+            padding: 15px;
+            margin: 12px 0;
+            border-left: 3px solid #333;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+        }
+        
+        .quiz-option:hover {
+            background: rgba(51, 51, 51, 0.8);
+        }
+        
+        .quiz-option.correct {
+            border-left-color: #00ff00;
+            background: rgba(0, 255, 0, 0.1);
+        }
+        
+        .quiz-option.wrong {
+            border-left-color: #ff0000;
+            background: rgba(255, 0, 0, 0.1);
+        }
+        
+        .code-block {
+            background: #111;
+            border: 1px solid #333;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        
+        .terminal {
+            background: #000;
+            border: 1px solid #00ff00;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+        }
+        
+        .terminal:before {
+            content: "$ ";
+            color: #00ff00;
+        }
+        
+        .error {
+            color: #ff0000;
+        }
+        
+        .warning {
+            color: #ffff00;
+        }
+        
+        .success {
+            color: #00ff00;
+        }
+        
+        .center-big {
+            text-align: center;
+            font-size: 2.8rem;
+            margin: 40px 0;
+            line-height: 1.3;
+        }
+        
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin: 35px 0;
+        }
+        
+        .grid-item {
+            background: rgba(51, 51, 51, 0.3);
+            padding: 25px;
+            border: 1px solid #333;
+            text-align: center;
+        }
+        
+        .big-text {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[1/22]</div>
+                    <h1 class="slide-title">FORMATION_CYBERSECURITE.EXE</h1>
+                    <div class="slide-subtitle">3 heures d'entraînement intensif | reflexes_essentiels.init()</div>
+                    <div class="slide-text">
+                        Bienvenue dans cette formation qui va transformer votre rapport à la sécurité numérique. 
+                        Nous allons découvrir ensemble que la cybersécurité n'est pas de la paranoia, 
+                        mais simplement l'équivalent numérique de fermer sa porte à clé.
+                    </div>
+                    <div class="terminal">
+                        cybersec != paranoia;<br>
+                        cybersec == verrouillez_votre_porte();
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 4.5%;"></div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[2/22]</div>
+                    <div class="time-badge">0x00:00 - 0x00:10</div>
+                    <h2 class="slide-title">INITIALISATION_SESSION</h2>
+                    <div class="slide-text">
+                        Avant de commencer, faisons un petit diagnostic rapide de votre situation actuelle. 
+                        Levez la main si vous reconnaissez une de ces situations :
+                    </div>
+                    <div class="code-block">
+                        // Validation des entrées utilisateur<br>
+                        if (photos_perdues) lever_main();<br>
+                        if (sms_suspects) lever_main();<br>
+                        if (mal_dos_bureau) lever_main();
+                    </div>
+                    <div class="highlight">
+                        <strong>OBJECTIF:</strong> Repartir avec 5-10 habitudes de sécurité prêtes à déployer en production
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 9%;"></div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[3/22]</div>
+                    <div class="time-badge">0x00:10 - 0x00:20</div>
+                    <h2 class="slide-title">AUDIT_SECURITE.quiz()</h2>
+                    <div class="slide-subtitle">Test de résistance des mots de passe :</div>
+                    <div class="slide-text">
+                        Regardons ensemble quelques exemples de mots de passe et évaluons leur sécurité :
+                    </div>
+                    <div class="quiz-option wrong">└── 123456 <span class="error">[ECHEC CRITIQUE]</span></div>
+                    <div class="quiz-option wrong">└── P@ssw0rd! <span class="error">[ECHEC]</span></div>
+                    <div class="quiz-option correct">└── JadoreLesCrepesDeMaGrandMere2024! <span class="success">[SUCCÈS]</span></div>
+                    <div class="code-block">
+                        // Règle fondamentale découverte :<br>
+                        longueur_personnelle.force() > complexite_aleatoire.confusion()<br><br>
+                        // Une phrase personnelle longue bat toujours<br>
+                        // des caractères aléatoires complexes mais courts
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 13.5%;"></div>
+            </div>
+            
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[4/22]</div>
+                    <h2 class="slide-title">VECTEUR_MENACE_USB</h2>
+                    <div class="slide-subtitle">Scénario : vous trouvez cette clé USB sur le parking</div>
+                    <div class="slide-text">
+                        Une clé USB étiquetée "Salaires_2024.xlsx" traîne près de votre voiture. 
+                        Votre première réaction sera déterminante pour la sécurité de toute l'entreprise :
+                    </div>
+                    <div class="quiz-option wrong">└── La brancher pour voir ce qu'il y a dessus <span class="error">[PIÈGE MORTEL]</span></div>
+                    <div class="quiz-option correct">└── Signaler à l'administrateur système <span class="success">[HÉROS DE LA SÉCURITÉ]</span></div>
+                    <div class="quiz-option correct">└── La jeter directement à la poubelle <span class="success">[PRUDENCE RÉCOMPENSÉE]</span></div>
+                    <div class="terminal">
+                        ALERTE: Une clé USB inconnue peut compromettre<br>
+                        votre système en moins de 3 secondes
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 18%;"></div>
+            </div>
+            
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[5/22]</div>
+                    <h2 class="slide-title">STOCKAGE_MOTS_DE_PASSE</h2>
+                    <div class="slide-subtitle">Où ranger vos précieux sésames ? Analysons les options :</div>
+                    <div class="slide-text">
+                        Chaque méthode de stockage a ses avantages et ses risques. 
+                        Découvrons ensemble les meilleures pratiques :
+                    </div>
+                    <div class="quiz-option wrong">└── Post-it sous le clavier <span class="error">[VISIBLE PAR TOUS]</span></div>
+                    <div class="quiz-option wrong">└── Fichier Excel "mes_mdp.xlsx" <span class="error">[CATASTROPHE ANNONCÉE]</span></div>
+                    <div class="quiz-option correct">└── Coffre-fort numérique chiffré OU carnet physique sécurisé <span class="success">[PROTECTION OPTIMALE]</span></div>
+                    <div class="slide-text">
+                        Le principe : soit tout numérique et chiffré, soit tout physique et caché. 
+                        Jamais de demi-mesures en sécurité !
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 22.5%;"></div>
+            </div>
+            
+            <!-- Slide 6 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[6/22]</div>
+                    <div class="time-badge">0x00:20 - 0x00:40</div>
+                    <div class="module-header">
+                        <h2 class="slide-title">MODULE_1: SECURITE_PHYSIQUE</h2>
+                        <div class="slide-subtitle">// Le monde réel existe encore, les menaces aussi</div>
+                    </div>
+                    <div class="slide-text">
+                        Avant de protéger nos données dans le cloud, commençons par sécuriser 
+                        notre environnement de travail immédiat. Les attaques physiques restent 
+                        redoutablement efficaces contre les systèmes les mieux protégés.
+                    </div>
+                    <div class="code-block">
+                        menaces_physiques = {<br>
+                        &nbsp;&nbsp;usb_killer: destruction_instantanee_materiel,<br>
+                        &nbsp;&nbsp;rubber_ducky: vol_credentials_automatise,<br>
+                        &nbsp;&nbsp;shoulder_surfing: capture_visuelle_donnees,<br>
+                        &nbsp;&nbsp;badge_cloning: acces_non_autorise<br>
+                        };
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 27%;"></div>
+            </div>
+            
+            <!-- Slide 7 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[7/22]</div>
+                    <h2 class="slide-title">LES_5_COMMANDEMENTS_SECURITE</h2>
+                    <div class="slide-text">
+                        Voici les réflexes qui vont devenir automatiques et vous sauver la mise 
+                        au quotidien. Ces gestes simples éliminent 80% des risques :
+                    </div>
+                    <div class="slide-list">
+                        <li><strong>Win+L sera votre meilleur ami</strong> - Verrouillez automatiquement, même pour aller aux toilettes</li>
+                        <li><strong>Bureau propre, esprit tranquille</strong> - Aucun document confidentiel visible, même 5 minutes</li>
+                        <li><strong>Traitez chaque clé USB comme une seringue sale</strong> - Jamais dans votre machine sans scan préalable</li>
+                        <li><strong>Quelqu'un regarde toujours par-dessus votre épaule</strong> - Positionnez votre écran intelligemment</li>
+                        <li><strong>Inspectez vos ports avant branchement</strong> - Un keylogger hardware est invisible mais mortel</li>
+                    </div>
+                    <div class="terminal">
+                        EXERCICE PRATIQUE: audit_bureau_par_paire()
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 31.5%;"></div>
+            </div>
+            
+            <!-- Slide 8 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[8/22]</div>
+                    <div class="time-badge">0x00:40 - 0x01:05</div>
+                    <div class="module-header">
+                        <h2 class="slide-title">MODULE_2: SYSTEMES_SAUVEGARDE</h2>
+                        <div class="slide-subtitle">// Votre assurance-vie numérique</div>
+                    </div>
+                    <div class="slide-text">
+                        Il y a deux types de personnes : celles qui font des sauvegardes, 
+                        et celles qui vont en faire après avoir tout perdu. 
+                        Découvrons ensemble des histoires vraies qui font réfléchir.
+                    </div>
+                    <div class="terminal">
+                        if (sauvegarde_existe) {<br>
+                        &nbsp;&nbsp;pleurer_une_fois();<br>
+                        } else {<br>
+                        &nbsp;&nbsp;pleurer_toute_la_vie();<br>
+                        }
+                    </div>
+                    <div class="code-block">
+                        // Retours d'expérience terrain<br>
+                        cas_marie.perte = "5_ans_factures_comptables"; // Dégât: 3000€<br>
+                        cas_paul.solution = google_photos.sync_auto(); // Sauvé !<br>
+                        cas_sophie.erreur = "disque_externe_dans_meme_incendie"; // Oups...
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 36%;"></div>
+            </div>
+            
+            <!-- Slide 9 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[9/22]</div>
+                    <h2 class="slide-title">STRATEGIE_SAUVEGARDE_321</h2>
+                    <div class="slide-text">
+                        La règle d'or universelle, reconnue par tous les professionnels de l'informatique. 
+                        Simple à retenir, efficace à appliquer :
+                    </div>
+                    <div class="center-big">
+                        <div style="color: #ffff00; margin: 25px;"><strong>3</strong> copies de vos données</div>
+                        <div style="color: #00ff00; margin: 25px;"><strong>2</strong> supports différents</div>
+                        <div style="color: #ff0000; margin: 25px;"><strong>1</strong> copie hors site</div>
+                    </div>
+                    <div class="slide-text">
+                        Exemple concret : original sur PC + copie disque externe + copie cloud. 
+                        Incendie, vol, panne matérielle... rien ne peut vous atteindre !
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 40.5%;"></div>
+            </div>
+            
+            <!-- Slide 10 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[10/22]</div>
+                    <h2 class="slide-title">PLANNING_SAUVEGARDE.deploy()</h2>
+                    <div class="slide-text">
+                        Transformons la bonne intention en habitude automatique. 
+                        Voici votre planning de sauvegarde personnalisé, à adapter selon vos besoins :
+                    </div>
+                    <div class="code-block">
+                        // Calendrier de sauvegarde optimisé<br>
+                        ce_soir: sauvegarder(documents_admin_comptabilite);<br>
+                        cette_semaine: sauvegarder(photos_famille_vacances);<br>
+                        ce_mois: sauvegarder(archives_mails_importants);<br>
+                        <br>
+                        // Automatisation recommandée<br>
+                        cron_job: "0 0 * * 0" // Rappel tous les dimanches
+                    </div>
+                    <div class="terminal">
+                        DEMONSTRATION EN DIRECT: configuration_google_drive()
+                    </div>
+                    <div class="slide-text">
+                        Nous allons maintenant voir ensemble comment configurer une solution de sauvegarde 
+                        automatique en moins de 10 minutes.
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 45%;"></div>
+            </div>
+            
+            <!-- Slide 11 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[11/22]</div>
+                    <div class="time-badge">0x01:05 - 0x01:30</div>
+                    <div class="module-header">
+                        <h2 class="slide-title">MODULE_3: DETECTION_MENACES</h2>
+                        <div class="slide-subtitle">// Développez votre sixième sens numérique</div>
+                    </div>
+                    <div class="slide-text">
+                        Les cybercriminels misent sur votre précipitation et vos émotions. 
+                        Apprenons à reconnaître leurs techniques les plus courantes 
+                        et à développer les bons réflexes de vérification.
+                    </div>
+                    <div class="code-block">
+                        indicateurs_phishing = [<br>
+                        &nbsp;&nbsp;"fautes_orthographe_inhabituelles",<br>
+                        &nbsp;&nbsp;"urgence_artificielle_stress",<br>
+                        &nbsp;&nbsp;"chantage_emotionnel_peur",<br>
+                        &nbsp;&nbsp;"domaine_suspect_similaire",<br>
+                        &nbsp;&nbsp;"pieces_jointes_malveillantes",<br>
+                        &nbsp;&nbsp;"liens_raccourcis_louches"<br>
+                        ];
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 49.5%;"></div>
+            </div>
+            
+            <!-- Slide 12 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[12/22]</div>
+                    <h2 class="slide-title">PROTOCOLE_STOP</h2>
+                    <div class="slide-text">
+                        Face à tout message suspect, email étrange ou situation douteuse, 
+                        voici le protocole qui va vous sauver la mise. Quatre étapes simples 
+                        qui font la différence entre victime et héros :
+                    </div>
+                    <div class="center-big">
+                        <div style="color: #ff0000; margin: 20px;"><strong>S</strong>uspicion détectée</div>
+                        <div style="color: #ffff00; margin: 20px;"><strong>T</strong>emps de pause obligatoire</div>
+                        <div style="color: #00ff00; margin: 20px;"><strong>O</strong>pinion d'un collègue</div>
+                        <div style="color: #0099ff; margin: 20px;"><strong>P</strong>rotection activée</div>
+                    </div>
+                    <div class="slide-text">
+                        La règle d'or : mieux vaut être prudent 100 fois pour rien 
+                        qu'imprudent une seule fois pour tout perdre.
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 54%;"></div>
+            </div>
+            
+            <!-- Slide 13 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[13/22]</div>
+                    <div class="time-badge">0x01:30 - 0x01:55</div>
+                    <div class="module-header">
+                        <h2 class="slide-title">MODULE_4: SECURITE_MOBILE</h2>
+                        <div class="slide-subtitle">// Votre coffre-fort de poche</div>
+                    </div>
+                    <div class="slide-text">
+                        Votre smartphone contient plus d'informations personnelles que votre portefeuille, 
+                        vos clés de maison et votre agenda réunis. Il mérite une protection à la hauteur 
+                        de ces enjeux. Configurons ensemble votre forteresse mobile.
+                    </div>
+                    <div class="code-block">
+                        configuration_mobile_optimale = {<br>
+                        &nbsp;&nbsp;code_pin: "complexe_mais_memorable",<br>
+                        &nbsp;&nbsp;verrouillage_auto: "30_secondes_max",<br>
+                        &nbsp;&nbsp;mises_a_jour: "automatiques_immediates",<br>
+                        &nbsp;&nbsp;sauvegardes: ["photos", "whatsapp", "contacts", "notes"],<br>
+                        &nbsp;&nbsp;double_authentification: "obligatoire_partout"<br>
+                        };
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 58.5%;"></div>
+            </div>
+            
+            <!-- Slide 14 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[14/22]</div>
+                    <h2 class="slide-title">MAINTENANCE_DOMINICALE()</h2>
+                    <div class="slide-text">
+                        Instaurons ensemble un rituel hebdomadaire de 15 minutes qui va protéger 
+                        votre vie numérique toute l'année. Chaque dimanche, ces gestes simples 
+                        renforcent votre sécurité :
+                    </div>
+                    <div class="code-block">
+                        function maintenance_dimanche() {<br>
+                        &nbsp;&nbsp;// Nettoyage et optimisation<br>
+                        &nbsp;&nbsp;supprimer_photos_inutiles();<br>
+                        &nbsp;&nbsp;verifier_sauvegarde_whatsapp();<br>
+                        &nbsp;&nbsp;desinstaller_apps_non_utilisees();<br>
+                        &nbsp;&nbsp;vider_corbeille_photos();<br>
+                        &nbsp;&nbsp;redemarrage_complet_systeme();<br>
+                        &nbsp;&nbsp;// Vérification sécurité<br>
+                        &nbsp;&nbsp;tester_localisation_telephone();<br>
+                        }
+                    </div>
+                    <div class="terminal">
+                        OUTILS RECOMMANDES: "Localiser mon appareil" | "Localiser iPhone"
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 63%;"></div>
+            </div>
+            
+            <!-- Slide 15 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[15/22]</div>
+                    <div class="time-badge">0x01:55 - 0x02:20</div>
+                    <div class="module-header">
+                        <h2 class="slide-title">MODULE_5: ERGONOMIE</h2>
+                        <div class="slide-subtitle">// Optimisation de la machine humaine</div>
+                    </div>
+                    <div class="slide-text">
+                        Votre corps est votre outil de travail le plus précieux. Une mauvaise posture 
+                        peut causer plus de dégâts à long terme qu'un virus informatique. 
+                        Protégeons votre capital santé avec la même rigueur que vos données.
+                    </div>
+                    <div class="code-block">
+                        position_ideale_bureau = {<br>
+                        &nbsp;&nbsp;pieds: "poses_bien_a_plat_au_sol",<br>
+                        &nbsp;&nbsp;dos: "droit_soutenu_par_dossier",<br>
+                        &nbsp;&nbsp;coudes: "angle_90_degres_detendus",<br>
+                        &nbsp;&nbsp;poignets: "position_neutre_non_plies",<br>
+                        &nbsp;&nbsp;ecran: "hauteur_yeux_bras_tendu"<br>
+                        };
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 67.5%;"></div>
+            </div>
+            
+            <!-- Slide 16 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[16/22]</div>
+                    <h2 class="slide-title">OPTIMISATION_ECRAN_CERVICALES</h2>
+                    <div class="slide-text">
+                        Voici un chiffre qui va changer votre façon de voir votre écran : 
+                        votre tête pèse 5kg droite, mais 27kg penchée à 60° ! 
+                        Votre cou supporte l'équivalent d'un enfant de 6 ans toute la journée.
+                    </div>
+                    <div class="code-block">
+                        configuration_ecran_optimal = {<br>&nbsp;&nbsp;hauteur: "niveau_des_yeux_naturel",<br>
+                        &nbsp;&nbsp;distance: "longueur_bras_tendu_60cm",<br>
+                        &nbsp;&nbsp;inclinaison: "leger_angle_vers_arriere",<br>
+                        &nbsp;&nbsp;luminosite: "adaptee_ambiance_piece"<br>
+                        };
+                    </div>
+                    <div class="terminal">
+                        PHYSIQUE APPLIQUEE:<br>
+                        charge_cervicale: tete_droite=5kg | tete_penchee_60deg=27kg<br>
+                        <br>
+                        SOLUTION IMMEDIATE: technique_selfie.appliquer()
+                    </div>
+                    <div class="slide-text">
+                        L'astuce du selfie : si vous devez lever votre téléphone pour prendre un selfie 
+                        de face, c'est que votre écran est trop bas !
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 72%;"></div>
+            </div>
+            
+            <!-- Slide 17 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[17/22]</div>
+                    <h2 class="slide-title">REGLE_20_20_20</h2>
+                    <div class="slide-text">
+                        Vos yeux ne sont pas conçus pour fixer un écran 8 heures par jour. 
+                        Cette règle simple va préserver votre vision et réduire drastiquement 
+                        votre fatigue oculaire. À mémoriser absolument :
+                    </div>
+                    <div class="center-big">
+                        <div style="color: #ffff00; margin: 25px;">Toutes les 20 <span style="font-size: 1.2rem;">minutes</span></div>
+                        <div style="color: #00ff00; margin: 25px;">Regarder à 6 <span style="font-size: 1.2rem;">mètres</span></div>
+                        <div style="color: #0099ff; margin: 25px;">Pendant 20 <span style="font-size: 1.2rem;">secondes</span></div>
+                    </div>
+                    <div class="terminal">
+                        BONUS_ETIREMENTS: position_chat | rotation_hibou | ailes_ange
+                    </div>
+                    <div class="slide-text">
+                        Profitez de ces micro-pauses pour faire ces trois étirements express 
+                        qui détendent tout le haut du corps en 30 secondes !
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 76.5%;"></div>
+            </div>
+            
+            <!-- Slide 18 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[18/22]</div>
+                    <div class="time-badge">0x02:20 - 0x02:50</div>
+                    <div class="module-header">
+                        <h2 class="slide-title">MODULE_6: CONFORMITE_RGPD</h2>
+                        <div class="slide-subtitle">// Cadre légal et protection des données</div>
+                    </div>
+                    <div class="slide-text">
+                        Le RGPD n'est pas qu'une contrainte administrative, c'est votre bouclier légal 
+                        contre les abus de données. Comprendre ses principes vous protège en tant que 
+                        citoyen ET vous évite des amendes salées en tant que professionnel.
+                    </div>
+                    <div class="slide-text">
+                        Depuis mai 2018, ignorer le RGPD peut coûter jusqu'à 4% du chiffre d'affaires 
+                        ou 20 millions d'euros. Mais rassurez-vous, la mise en conformité de base 
+                        est plus simple qu'on ne le pense.
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 81%;"></div>
+            </div>
+            
+            <!-- Slide 19 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[19/22]</div>
+                    <h2 class="slide-title">FONCTIONS_CORE_RGPD</h2>
+                    <div class="slide-text">
+                        Le RGPD repose sur quatre piliers fondamentaux que toute organisation 
+                        doit respecter. Pensez-y comme aux quatre fonctions essentielles 
+                        de votre programme de conformité :
+                    </div>
+                    <div class="code-block">
+                        function conformite_rgpd() {<br>
+                        &nbsp;&nbsp;demander_consentement(); // Accord explicite<br>
+                        &nbsp;&nbsp;expliquer_utilisation(); // Transparence totale<br>
+                        &nbsp;&nbsp;donner_acces_donnees(); // Droit de consultation<br>
+                        &nbsp;&nbsp;supprimer_sur_demande(); // Droit à l'oubli<br>
+                        &nbsp;&nbsp;// Bonus: permettre_portabilite();<br>
+                        &nbsp;&nbsp;// Bonus: corriger_erreurs();<br>
+                        }
+                    </div>
+                    <div class="terminal">
+                        CAS_REEL: petite_entreprise.amende = 5000€<br>
+                        // Motif: conservation_donnees_clients_trop_longue
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 85.5%;"></div>
+            </div>
+            
+            <!-- Slide 20 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[20/22]</div>
+                    <h2 class="slide-title">KIT_CONFORMITE_MINIMALE</h2>
+                    <div class="slide-text">
+                        Pour les TPE/PME, inutile de sur-complexifier. Voici le kit de démarrage 
+                        qui couvre 90% des obligations légales en quelques heures de travail :
+                    </div>
+                    <div class="slide-list">
+                        <li><strong>Désigner un référent données</strong> - Même à temps partiel, quelqu'un doit piloter</li>
+                        <li><strong>Créer un registre Excel simple</strong> - Qui collecte quoi, pourquoi, combien de temps</li>
+                        <li><strong>Rédiger une politique de confidentialité</strong> - Utilisez les modèles CNIL gratuits</li>
+                        <li><strong>Définir une procédure de demande</strong> - Comment réagir si un client demande ses données</li>
+                    </div>
+                    <div class="terminal">
+                        RESSOURCES: cnil.fr/modeles | privacy_policy_generator.fr
+                    </div>
+                    <div class="slide-text">
+                        Temps estimé de mise en place : 4-6 heures pour une petite structure. 
+                        Investissement minimal, protection maximale.
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 90%;"></div>
+            </div>
+            
+            <!-- Slide 21 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[21/22]</div>
+                    <div class="time-badge">0x02:50 - 0x03:00</div>
+                    <h2 class="slide-title">DEPLOIEMENT_PLAN_ACTION</h2>
+                    <div class="slide-text">
+                        La formation ne vaut que par sa mise en pratique. Voici votre feuille de route 
+                        personnalisée pour transformer ces 3 heures en habitudes durables. 
+                        Progressons par étapes réalistes :
+                    </div>
+                    <div class="code-block">
+                        strategie_333_personnalisee = {<br>
+                        &nbsp;&nbsp;// Démarrage immédiat<br>
+                        &nbsp;&nbsp;demain: ["Win+L_automatique", "audit_bureau", "test_sauvegarde"],<br>
+                        &nbsp;&nbsp;// Consolidation<br>
+                        &nbsp;&nbsp;cette_semaine: ["mot_passe_fort", "config_mobile", "regle_20_20_20"],<br>
+                        &nbsp;&nbsp;// Perfectionnement<br>
+                        &nbsp;&nbsp;ce_mois: ["RGPD_minimal", "backup_automatique", "formation_equipe"]<br>
+                        };
+                    </div>
+                    <div class="terminal">
+                        OUTILS_ESSENTIELS: bitwarden | google_authenticator | stretchly<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ublock_origin | signal_messenger
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 94.5%;"></div>
+            </div>
+            
+            <!-- Slide 22 -->
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div class="slide-number">[22/22]</div>
+                    <h2 class="slide-title">SESSION_TERMINEE</h2>
+                    <div class="slide-text">
+                        Félicitations ! Vous venez de franchir une étape importante dans votre 
+                        autonomie numérique. Rappelez-vous ces trois vérités fondamentales 
+                        qui guideront votre pratique quotidienne :
+                    </div>
+                    <div class="terminal">
+                        securite_parfaite == impossible;<br>
+                        insecurite_totale == inacceptable;<br>
+                        chaque_geste_compte = true;
+                    </div>
+                    <div class="code-block">
+                        // Règles de production validées<br>
+                        ordinateur_verrouille = pirate_frustre;<br>
+                        sauvegarde_existe = journee_sauvee;<br>
+                        mot_passe_fort = problemes_evites;<br>
+                        pause_reguliere = sante_preservee;
+                    </div>
+                    <div class="terminal">
+                        RESSOURCES_PERMANENTES:<br>
+                        cybermalveillance.gouv.fr | haveibeenpwned.com<br>
+                        cnil.fr | signal.org | bitwarden.com
+                    </div>
+                    <div class="quote">
+                        "La cybersécurité, c'est comme le sport : mieux vaut 15 minutes par jour 
+                        que 3 heures une fois par mois !"
+                    </div>
+                </div>
+                <div class="progress-bar" style="width: 100%;"></div>
+            </div>
+            
+        </div>
+        
+        <!-- Navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: false,
+            keyboard: {
+                enabled: true,
+            },
+            mousewheel: {
+                enabled: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'progressbar',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            effect: 'slide',
+            speed: 300,
+            allowTouchMove: true,
+        });
+        
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                swiper.slideNext();
+            } else if (e.key === 'ArrowLeft') {
+                swiper.slidePrev();
+            } else if (e.key === 'Home') {
+                swiper.slideTo(0);
+            } else if (e.key === 'End') {
+                swiper.slideTo(swiper.slides.length - 1);
+            } else if (e.key === 'Escape') {
+                document.exitFullscreen();
+            }
+        });
+        
+        // Auto-fullscreen on F11
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'F11') {
+                e.preventDefault();
+                if (!document.fullscreenElement) {
+                    document.documentElement.requestFullscreen();
+                } else {
+                    document.exitFullscreen();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
